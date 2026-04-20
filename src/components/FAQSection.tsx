@@ -7,44 +7,44 @@ import {
 
 const faqs = [
   {
-    question: "Vocês comercializam para quem está começando?",
+    question: "Vocês atendem quem está começando?",
     answer:
-      "Não. Atendemos exclusivamente operações de alto volume com estrutura técnica madura — head de mídia, gestor de tráfego sênior ou agência. Iniciante queima ativo premium em horas e isso não interessa a nenhuma das partes.",
+      "Não. A gente trabalha com operações que já rodam volume — head de mídia, gestor sênior ou agência estruturada. Iniciante queima ativo premium em horas, e isso não é bom pra ninguém.",
   },
   {
     question: "Qual a diferença entre BM Verificada e BM Antiga?",
     answer:
-      "BM Verificada já passou pelo processo oficial de verificação Meta — entrega cap alto desde D0 e prioridade no leilão. BM Antiga tem 2+ anos de histórico real de gastos, ideal para nichos sensíveis onde resiliência a auditoria importa mais do que cap inicial. As duas se complementam dentro de uma stack de contingência.",
+      "A Verificada já passou pelo processo oficial do Meta: cap de gasto alto desde o D0 e prioridade no leilão. A Antiga tem anos de histórico real de gastos e brilha em nichos sensíveis, onde resistência a auditoria pesa mais que cap inicial. Em estruturas maduras, as duas se complementam.",
   },
   {
-    question: "Como vocês comprovam a idade e o Trust Score do ativo?",
+    question: "Como vocês comprovam a idade e o Trust Score?",
     answer:
-      "Auditoria via timestamp interno do Meta, histórico de gastos exportável e validação de fingerprint. Antes da liberação fazemos walkthrough técnico mostrando a documentação real do ativo. Nada de captura de tela editada.",
+      "Pelo próprio Meta: timestamp interno, histórico de gastos exportável e validação de fingerprint. Antes da liberação, fazemos um walkthrough mostrando a documentação real do ativo — nada de print editado.",
   },
   {
     question: "O ativo é exclusivo ou compartilhado?",
     answer:
-      "Exclusivo. Cada perfil, BM e página é entregue para uma única operação. Ativo compartilhado dispara fingerprint cruzado e queima as duas pontas. Não trabalhamos assim.",
+      "Exclusivo, sempre. Cada perfil, BM e página é entregue pra uma única operação. Ativo compartilhado dispara fingerprint cruzado e queima as duas pontas — a gente simplesmente não trabalha assim.",
   },
   {
-    question: "Vocês trabalham com nichos cinza (nutra, infoproduto agressivo, apostas)?",
+    question: "Vocês atendem nichos mais sensíveis (nutra, infoproduto agressivo, apostas)?",
     answer:
-      "Sim, mas com curadoria específica. Para essas verticais selecionamos ativos com Trust Score elevado, idade comprovada e sem strike prévio relacionado. Conversamos os detalhes no briefing.",
+      "Sim, com curadoria específica pra cada caso. Pra essas verticais, separamos ativos com Trust Score alto, idade comprovada e sem strike prévio relacionado. Os detalhes a gente alinha no briefing.",
   },
   {
-    question: "Por que não há preço na página?",
+    question: "Por que não tem preço na página?",
     answer:
-      "Ativo de qualidade não tem tabela. O valor depende da combinação (BM + perfil + página), idade, nicho e janela de entrega. Atendimento é 1 a 1 — fale no WhatsApp para receber a cotação técnica.",
+      "Porque ativo de qualidade não cabe em tabela. O valor depende da combinação (BM + perfil + página), idade, nicho e janela de entrega. O atendimento é 1 a 1 — chama no WhatsApp pra receber a cotação certa pro seu caso.",
   },
   {
     question: "Existe garantia ou reposição?",
     answer:
-      "Política de reposição é discutida caso a caso, baseada no uso técnico correto do ativo (warm-up, criativo dentro de policy, vinculação correta). Definimos os termos no briefing antes da entrega.",
+      "A política de reposição é definida caso a caso, sempre considerando o uso técnico correto (warm-up, criativo dentro de policy, vinculação certa). A gente alinha tudo no briefing, antes da entrega.",
   },
   {
-    question: "Como acontece o handover?",
+    question: "Como funciona a entrega?",
     answer:
-      "Entrega via canal criptografado com walkthrough técnico ao vivo: vinculação de perfil, setup de BM, conexão de pixel, estratégia de warm-up dos primeiros gastos. Suporte técnico ativo nas primeiras 72h.",
+      "Handover por canal seguro com walkthrough ao vivo: vinculação de perfil, setup de BM, conexão de pixel e estratégia de warm-up nos primeiros gastos. Nas primeiras 72h, suporte técnico ativo do nosso lado.",
   },
 ];
 
@@ -54,7 +54,7 @@ const FAQSection = () => {
       <div className="container max-w-3xl">
         <div className="text-center mb-12">
           <h2 className="font-display text-3xl md:text-5xl font-bold">
-            Perguntas <span className="text-gradient">frequentes</span>
+            Tirando suas <span className="text-gradient">dúvidas</span>
           </h2>
         </div>
 

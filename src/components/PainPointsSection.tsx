@@ -10,27 +10,27 @@ const painChips = [
 const pains = [
   {
     icon: Ban,
-    title: "Ativo virgem não aguenta volume.",
+    title: "Ativo novo não aguenta o tranco.",
     description:
-      "Conta nova com pixel sem histórico, BM sem verificação, perfil recém-criado. Você sobe campanha agressiva e o algoritmo do Meta liga o radar — restrição em horas, não em dias.",
+      "Conta sem histórico, BM sem verificação e perfil recém-criado. Você sobe um budget mais agressivo e o Meta acende o alerta — a restrição vem em horas, não em dias.",
   },
   {
     icon: TrendingDown,
-    title: "Reset de aprendizado a cada queda.",
+    title: "Toda queda zera seu aprendizado.",
     description:
-      "Perdeu a BM no meio da escala? Perdeu o pixel maduro, o lookalike custom, o histórico de conversão. CPM dispara, ROAS desaba e a operação volta para a estaca zero.",
+      "Quando a BM cai no meio da escala, vai junto o pixel maduro, o lookalike que estava performando e o histórico de conversão. CPM sobe, ROAS desaba — e você recomeça do zero.",
   },
   {
     icon: Flame,
-    title: "Ativo barato é o mais caro do mercado.",
+    title: "Ativo barato sai caro lá na frente.",
     description:
-      "BM revendida em massa, perfil reciclado, página com flag interna. Você paga pouco, queima em 48h e perde a janela de venda. O custo não é o ativo — é a oportunidade evaporada.",
+      "BM revendida pra todo mundo, perfil reciclado, página com flag. Custou pouco, queimou em 48h e a janela de venda foi embora. O prejuízo não é o ativo — é o faturamento que ficou na mesa.",
   },
   {
     icon: AlertTriangle,
-    title: "Cada hora offline custa cinco dígitos.",
+    title: "Hora offline em pico custa caro.",
     description:
-      "Operações que rodam 30k, 50k, 100k+ por dia não podem depender de fornecedor amador. Ativo fraco quebra exatamente no pico — quando o CPA estava no mínimo e a conversão no máximo.",
+      "Quem roda 30k, 50k, 100k por dia não pode depender de fornecedor amador. O ativo fraco sempre quebra na pior hora — bem quando o CPA está baixo e a conversão a mil.",
   },
 ];
 
@@ -48,14 +48,15 @@ const PainPointsSection = () => {
         </div>
 
         <h2 className="font-display text-3xl md:text-5xl lg:text-6xl font-bold mb-4">
-          O Meta não bloqueia performance.
+          O Meta não bloqueia campanha.
           <br />
           <span className="text-gradient">Bloqueia ativo fraco.</span>
         </h2>
 
         <p className="text-muted-foreground text-lg max-w-2xl mx-auto mb-8">
-          Se o Trust Score do seu ativo é baixo, qualquer review automática vira
-          banimento. Não importa o criativo, não importa a oferta — a conta cai.
+          Quando o Trust Score do ativo é baixo, qualquer review automática vira
+          BAN. Não adianta criativo bom nem oferta validada — se a base não
+          aguenta, a conta cai.
         </p>
 
         <div className="flex flex-wrap justify-center gap-3 mb-16">

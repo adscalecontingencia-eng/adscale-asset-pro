@@ -7,11 +7,11 @@ const assets = [
     tag: "VERIFIED",
     title: "BM Verificada",
     description:
-      "Business Manager com selo de verificação ativo no Meta. Limite de gastos elevado desde a primeira impressão, melhor priorização no leilão e blindagem contra reviews automáticas.",
+      "Business Manager com selo de verificação ativo no Meta. Limite de gasto alto desde o primeiro dia, prioridade no leilão e muito mais resistência a review automática.",
     bullets: [
-      "Verificação Meta ativa",
+      "Verificação oficial Meta",
       "Cap de gasto alto desde D0",
-      "Pronta para escala agressiva",
+      "Pronta para escalar sem medo",
     ],
   },
   {
@@ -19,11 +19,11 @@ const assets = [
     tag: "AGED",
     title: "BM Antiga",
     description:
-      "BMs com 2+ anos de histórico, gastos consistentes e zero strike na ficha. Resistência comprovada a auditorias, ideal para nichos sensíveis e operações de alto ticket.",
+      "BMs com anos de histórico, gastos consistentes e ficha limpa. Aguentam auditoria, sustentam ticket alto e seguram nichos onde ativo novo não dura uma semana.",
     bullets: [
       "Idade real comprovada",
       "Histórico de gastos limpo",
-      "Resiliência em nichos cinza",
+      "Resistência em nichos pesados",
     ],
   },
   {
@@ -31,11 +31,11 @@ const assets = [
     tag: "MATURE",
     title: "Perfil Antigo",
     description:
-      "Perfis pessoais farmados com timeline real, conexões orgânicas e atividade contínua. A base que sustenta toda BM e suporta gerência de múltiplas contas sem trigger de fingerprint.",
+      "Perfis com timeline real, amigos, fotos e atividade orgânica de anos. É a base que segura sua BM em pé e te deixa operar várias contas sem disparar fingerprint cruzado.",
     bullets: [
-      "Timeline orgânica",
+      "Timeline e atividade orgânica",
       "Trust Score consolidado",
-      "Suporte a multi-account",
+      "Estável em multi-conta",
     ],
   },
   {
@@ -43,11 +43,11 @@ const assets = [
     tag: "AGED",
     title: "Página Antiga",
     description:
-      "Fanpages com idade real, engajamento histórico e nicho compatível com a oferta. Reduz drasticamente o risco de derrubada por denúncia e sustenta lookalikes mais precisos.",
+      "Fanpages com idade, engajamento real e nicho coerente com a sua oferta. Diminui muito o risco de derrubada por denúncia e ainda alimenta lookalikes mais precisos.",
     bullets: [
-      "Idade + engajamento real",
-      "Pronta para vincular criativo",
-      "Compatibilidade por nicho",
+      "Idade + engajamento reais",
+      "Pronta pra vincular criativo",
+      "Match por nicho de oferta",
     ],
   },
 ];
@@ -62,13 +62,14 @@ const AssetsSection = () => {
           <div className="badge-pill mx-auto mb-8">🛡️ ATIVOS DISPONÍVEIS</div>
 
           <h2 className="font-display text-3xl md:text-5xl lg:text-6xl font-bold mb-4">
-            Ativos comercializados sob{" "}
-            <span className="text-gradient">curadoria técnica</span>
+            A estrutura que separa quem escala de{" "}
+            <span className="text-gradient">quem só tenta.</span>
           </h2>
 
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto mb-4">
-            Cada ativo passa por validação de fingerprint, score, idade e
-            histórico antes de ser entregue. Nada de revenda em massa.
+            Cada ativo é validado um a um — fingerprint, idade, histórico e
+            Trust Score — antes de chegar até você. Sem revenda em massa, sem
+            ativo de catálogo.
           </p>
         </div>
 
@@ -115,7 +116,7 @@ const AssetsSection = () => {
 
         <div className="bg-gradient-primary rounded-2xl py-5 px-8 text-center">
           <p className="text-primary-foreground font-display text-lg md:text-xl font-bold">
-            Operação séria exige ativo sério. Preço sob consulta.
+            Operação de verdade pede ativo de verdade. Cotação sob consulta.
           </p>
         </div>
       </div>

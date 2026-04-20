@@ -8,12 +8,12 @@ const CTASection = () => {
 
       <div className="container max-w-4xl relative z-10 text-center">
         <h2 className="font-display text-3xl md:text-5xl lg:text-6xl font-bold mb-6">
-          Pare de queimar ativo barato.{" "}
-          <span className="text-gradient italic">Opere com estrutura.</span>
+          Chega de queimar dinheiro com ativo fraco.{" "}
+          <span className="text-gradient italic">Escale com base sólida.</span>
         </h2>
         <p className="text-muted-foreground text-lg max-w-xl mx-auto mb-10">
-          BMs Verificadas, BMs Antigas, Perfis Maduros e Páginas Aged — entregues
-          sob curadoria para quem escala de verdade.
+          BMs Verificadas, BMs antigas, perfis e páginas com Trust Score alto —
+          entregues sob curadoria para quem opera volume de verdade.
         </p>
 
         <a
