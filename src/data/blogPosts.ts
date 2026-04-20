@@ -1196,18 +1196,18 @@ Com a App Tracking Transparency (ATT) da Apple, o Meta criou o **Aggregated Even
 - Vá em **Business Settings → Brand Safety → Domains**
 - Adicione o domínio
 - Copie a meta tag fornecida
-- Cole no `<head>` da home do site
+- Cole no head da home do site
 - Clique em **Verify**
 
 ### 2. Arquivo HTML
-- Baixe o arquivo `.html` fornecido pelo Meta
-- Hospede em `seudominio.com/nome-do-arquivo.html`
+- Baixe o arquivo .html fornecido pelo Meta
+- Hospede em seudominio.com/nome-do-arquivo.html
 - Clique em **Verify**
 
 ### 3. Registro DNS TXT (mais robusto)
 - Adicione um registro TXT no painel DNS:
-  - Nome: `@`
-  - Valor: `facebook-domain-verification=ABC123...`
+  - Nome: @
+  - Valor: facebook-domain-verification=ABC123...
 - Aguarde propagação (até 72h)
 - Clique em **Verify**
 
