@@ -2,10 +2,11 @@ import Logo from "./Logo";
 import { WHATSAPP_URL } from "@/lib/whatsapp";
 
 const navLinks = [
-  { href: "#ativos", label: "Ativos" },
-  { href: "#qualidade", label: "Qualidade" },
-  { href: "#processo", label: "Processo" },
-  { href: "#faq", label: "FAQ" },
+  { href: "/#ativos", label: "Ativos" },
+  { href: "/#qualidade", label: "Qualidade" },
+  { href: "/#processo", label: "Processo" },
+  { href: "/blog", label: "Blog" },
+  { href: "/#faq", label: "FAQ" },
 ];
 
 const FooterSection = () => {

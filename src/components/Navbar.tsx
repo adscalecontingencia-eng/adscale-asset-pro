@@ -1,13 +1,15 @@
 import Logo from "./Logo";
 import { Menu, X } from "lucide-react";
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import { WHATSAPP_URL } from "@/lib/whatsapp";
 
 const navLinks = [
-  { href: "#ativos", label: "Ativos" },
-  { href: "#qualidade", label: "Qualidade" },
-  { href: "#processo", label: "Processo" },
-  { href: "#faq", label: "FAQ" },
+  { href: "/#ativos", label: "Ativos" },
+  { href: "/#qualidade", label: "Qualidade" },
+  { href: "/#processo", label: "Processo" },
+  { href: "/blog", label: "Blog" },
+  { href: "/#faq", label: "FAQ" },
 ];
 
 const Navbar = () => {
@@ -29,9 +31,9 @@ const Navbar = () => {
       }`}
     >
       <div className="container max-w-6xl flex items-center justify-between px-4">
-        <a href="#">
+        <Link to="/">
           <Logo />
-        </a>
+        </Link>
 
         <div className="hidden md:flex items-center gap-8">
           {navLinks.map((link) => (
