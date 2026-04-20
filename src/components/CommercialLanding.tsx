@@ -149,7 +149,77 @@ const CommercialLanding = ({
           </div>
         </section>
 
-        <section className="container max-w-3xl px-4 mt-20" aria-labelledby="faq-heading">
+        {testimonials && testimonials.length > 0 && (
+          <section className="container max-w-6xl px-4 mt-20" aria-labelledby="depoimentos-heading">
+            <div className="flex flex-col gap-2 mb-8">
+              <span className="text-sm text-primary font-semibold">Depoimentos</span>
+              <h2 id="depoimentos-heading" className="font-display text-2xl md:text-3xl font-bold">
+                Operações reais que escalam com AD Scale
+              </h2>
+            </div>
+            <div className="grid md:grid-cols-3 gap-5">
+              {testimonials.map((t) => (
+                <article key={t.name} className="border border-border/50 bg-card/60 rounded-lg p-6 flex flex-col">
+                  <Quote className="w-6 h-6 text-primary mb-3" />
+                  <p className="text-sm text-foreground/90 leading-relaxed mb-5">"{t.quote}"</p>
+                  <div className="mt-auto pt-4 border-t border-border/50">
+                    <div className="flex items-center gap-1 mb-2 text-primary">
+                      {[0, 1, 2, 3, 4].map((i) => (
+                        <Star key={i} className="w-3.5 h-3.5 fill-current" />
+                      ))}
+                    </div>
+                    <p className="font-semibold text-foreground text-sm">{t.name}</p>
+                    <p className="text-xs text-muted-foreground">{t.role} · {t.operation}</p>
+                    <div className="mt-3 flex items-baseline gap-2">
+                      <span className="font-display text-lg font-bold text-primary">{t.metric}</span>
+                      <span className="text-xs text-muted-foreground">{t.metricLabel}</span>
+                    </div>
+                    <p className="text-xs text-muted-foreground mt-1">Volume: {t.volume}</p>
+                  </div>
+                </article>
+              ))}
+            </div>
+          </section>
+        )}
+
+        {useCases && useCases.length > 0 && (
+          <section className="container max-w-6xl px-4 mt-20" aria-labelledby="casos-heading">
+            <div className="flex flex-col gap-2 mb-8">
+              <span className="text-sm text-primary font-semibold">Casos de uso reais</span>
+              <h2 id="casos-heading" className="font-display text-2xl md:text-3xl font-bold">
+                Como operações resolveram problemas críticos
+              </h2>
+            </div>
+            <div className="grid md:grid-cols-2 gap-5">
+              {useCases.map((c) => (
+                <article key={c.title} className="border border-border/50 bg-card/60 rounded-lg p-6">
+                  <div className="flex items-center gap-2 mb-3">
+                    <span className="px-2.5 py-1 rounded-full bg-primary/10 text-primary text-xs font-semibold">
+                      {c.segment}
+                    </span>
+                  </div>
+                  <h3 className="font-display text-lg font-bold text-foreground mb-3">{c.title}</h3>
+                  <div className="space-y-3 text-sm">
+                    <div>
+                      <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wide mb-1">Cenário</p>
+                      <p className="text-foreground/90 leading-relaxed">{c.scenario}</p>
+                    </div>
+                    <div>
+                      <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wide mb-1">Ação</p>
+                      <p className="text-foreground/90 leading-relaxed">{c.action}</p>
+                    </div>
+                    <div className="flex items-start gap-2 pt-3 border-t border-border/50">
+                      <TrendingUp className="w-4 h-4 text-primary mt-0.5 shrink-0" />
+                      <p className="text-foreground font-medium leading-relaxed">{c.result}</p>
+                    </div>
+                  </div>
+                </article>
+              ))}
+            </div>
+          </section>
+        )}
+
+
           <h2 id="faq-heading" className="font-display text-2xl md:text-3xl font-bold mb-8">Perguntas frequentes</h2>
           <div className="space-y-4">
             {faqs.map((f) => (
