@@ -36,17 +36,17 @@ const PillarFacebookAds = () => {
         author: {
           "@type": "Person",
           name: "Pedro Lucas",
-          url: "https://adscale.app/autor/pedro-lucas",
+          url: "https://adscalecontingencia.com/autor/pedro-lucas",
         },
         publisher: {
           "@type": "Organization",
           name: "AD Scale",
-          logo: { "@type": "ImageObject", url: "https://adscale.app/og/og-default.jpg" },
+          logo: { "@type": "ImageObject", url: "https://adscalecontingencia.com/og/og-default.jpg" },
         },
-        image: "https://adscale.app/og/og-default.jpg",
+        image: "https://adscalecontingencia.com/og/og-default.jpg",
         mainEntityOfPage: {
           "@type": "WebPage",
-          "@id": "https://adscale.app/guia-facebook-ads-alto-volume",
+          "@id": "https://adscalecontingencia.com/guia-facebook-ads-alto-volume",
         },
       },
     ],

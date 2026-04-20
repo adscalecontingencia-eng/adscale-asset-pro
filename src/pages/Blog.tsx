@@ -130,13 +130,13 @@ const Blog = () => {
     name: "Blog AD Scale — Contingência e Meta Ads",
     description:
       "Conteúdo técnico sobre ativos de contingência, BMs Verificadas, Trust Score e operação profissional em Meta Ads.",
-    url: "https://adscale.app/blog",
+    url: "https://adscalecontingencia.com/blog",
     blogPost: sortedPosts.map((p) => ({
       "@type": "BlogPosting",
       headline: p.title,
       description: p.description,
       datePublished: p.publishedAt,
-      url: `https://adscale.app/blog/${p.slug}`,
+      url: `https://adscalecontingencia.com/blog/${p.slug}`,
     })),
   };
 
