@@ -5,9 +5,9 @@ import { Link } from "react-router-dom";
 import { WHATSAPP_URL } from "@/lib/whatsapp";
 
 const navLinks = [
-  { href: "/#ativos", label: "Ativos" },
-  { href: "/#qualidade", label: "Qualidade" },
-  { href: "/#processo", label: "Processo" },
+  { href: "/bm-verificada", label: "BM Verificada" },
+  { href: "/contingencia-meta-ads", label: "Contingência" },
+  { href: "/consultoria-meta-ads", label: "Consultoria" },
   { href: "/blog", label: "Blog" },
   { href: "/#faq", label: "FAQ" },
 ];

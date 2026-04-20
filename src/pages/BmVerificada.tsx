@@ -75,7 +75,7 @@ const BmVerificada = () => (
     relatedPosts={[
       { slug: "o-que-e-business-manager-verificada-meta", label: "O que é Business Manager verificada no Meta" },
       { slug: "como-escolher-fornecedor-bm-verificada", label: "Como escolher um fornecedor de BM verificada" },
-      { slug: "trust score meta ads como funciona".replace(/ /g, "-"), label: "Trust Score Meta Ads: como funciona" },
+      { slug: "trust-score-meta-ads-como-funciona", label: "Trust Score Meta Ads: como funciona" },
     ]}
     internalLinks={[
       { href: "/contingencia-meta-ads", label: "Estrutura de contingência Meta Ads" },

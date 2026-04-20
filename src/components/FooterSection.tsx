@@ -2,9 +2,9 @@ import Logo from "./Logo";
 import { WHATSAPP_URL } from "@/lib/whatsapp";
 
 const navLinks = [
-  { href: "/#ativos", label: "Ativos" },
-  { href: "/#qualidade", label: "Qualidade" },
-  { href: "/#processo", label: "Processo" },
+  { href: "/bm-verificada", label: "Comprar BM Verificada" },
+  { href: "/contingencia-meta-ads", label: "Contingência Meta Ads" },
+  { href: "/consultoria-meta-ads", label: "Consultoria Meta Ads" },
   { href: "/blog", label: "Blog" },
   { href: "/#faq", label: "FAQ" },
 ];
@@ -20,7 +20,7 @@ const FooterSection = () => {
             </div>
             <p className="text-muted-foreground text-sm leading-relaxed">
               Comercialização de ativos de contingência premium para operações
-              profissionais de mídia paga no Meta.
+              profissionais de mídia paga no Meta Ads e Facebook Ads.
             </p>
           </div>
 

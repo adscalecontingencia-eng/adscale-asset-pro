@@ -71,20 +71,27 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background overflow-x-hidden w-full max-w-[100vw]">
       <SEO
-        title="Contingência Meta Ads: BM Verificada e Trust Score | AD Scale"
-        description="Ativos de contingência para Meta Ads: BM Verificada, BM antiga, perfil aged e página antiga com Trust Score alto para operações de alto volume."
+        title="Contingência Meta Ads e Facebook Ads: BM Verificada | AD Scale"
+        description="Ativos de contingência para Meta Ads e Facebook Ads: BM Verificada com selo azul, BM antiga, perfil aged e página antiga com Trust Score alto."
         keywords={[
           "contingência meta ads",
-          "BM verificada",
-          "BM antiga",
+          "contingência facebook ads",
+          "bm verificada facebook",
+          "bm verificada meta",
+          "comprar bm verificada",
+          "bm antiga facebook",
           "trust score meta",
+          "trust score facebook ads",
           "perfil aged facebook",
           "página antiga facebook",
-          "comprar BM verificada",
-          "estrutura de contingência facebook ads",
+          "estrutura de contingência facebook",
+          "bloqueio conta de anúncio facebook",
           "bloqueio meta ads",
-          "gestor de tráfego",
+          "consultoria meta ads",
+          "consultoria facebook ads",
+          "gestor de tráfego facebook",
           "escalar meta ads",
+          "escalar facebook ads",
         ]}
         canonical="/"
         jsonLd={jsonLd}
