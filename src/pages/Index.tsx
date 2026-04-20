@@ -4,6 +4,8 @@ import TrustBar from "@/components/TrustBar";
 import PainPointsSection from "@/components/PainPointsSection";
 import AssetsSection from "@/components/AssetsSection";
 import QualitySection from "@/components/QualitySection";
+import ComparisonSection from "@/components/ComparisonSection";
+import TestimonialsSection from "@/components/TestimonialsSection";
 import ProcessSection from "@/components/ProcessSection";
 import FAQSection from "@/components/FAQSection";
 import CTASection from "@/components/CTASection";
