@@ -1,10 +1,28 @@
 import { Link } from "react-router-dom";
-import { ArrowRight, Check, ShieldCheck, Zap, Star } from "lucide-react";
+import { ArrowRight, Check, ShieldCheck, Zap, Star, Quote, TrendingUp } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import FooterSection from "@/components/FooterSection";
 import WhatsAppFloat from "@/components/WhatsAppFloat";
 import SEO from "@/components/SEO";
 import { WHATSAPP_URL } from "@/lib/whatsapp";
+
+export interface Testimonial {
+  name: string;
+  role: string;
+  operation: string;
+  quote: string;
+  metric: string;
+  metricLabel: string;
+  volume: string;
+}
+
+export interface UseCase {
+  title: string;
+  scenario: string;
+  action: string;
+  result: string;
+  segment: string;
+}
 
 export interface CommercialLandingProps {
   seo: {
@@ -21,6 +39,8 @@ export interface CommercialLandingProps {
   faqs: { question: string; answer: string }[];
   relatedPosts: { slug: string; label: string }[];
   internalLinks: { href: string; label: string }[];
+  testimonials?: Testimonial[];
+  useCases?: UseCase[];
   ctaPrimary?: string;
 }
 
@@ -34,6 +54,8 @@ const CommercialLanding = ({
   faqs,
   relatedPosts,
   internalLinks,
+  testimonials,
+  useCases,
   ctaPrimary = "Falar com o time no WhatsApp",
 }: CommercialLandingProps) => {
   const jsonLd = {
