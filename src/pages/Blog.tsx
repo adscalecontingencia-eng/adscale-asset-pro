@@ -63,8 +63,20 @@ const Blog = () => {
               <Link
                 key={post.slug}
                 to={`/blog/${post.slug}`}
-                className="group block p-6 md:p-8 rounded-2xl border border-border/50 bg-card/60 backdrop-blur-sm hover:border-primary/40 transition-all"
+                className="group block rounded-2xl border border-border/50 bg-card/60 backdrop-blur-sm hover:border-primary/40 transition-all overflow-hidden"
               >
+                <div className="grid md:grid-cols-[280px_1fr] gap-0">
+                  <div className="aspect-[1200/630] md:aspect-auto md:h-full overflow-hidden bg-background">
+                    <img
+                      src={post.ogImage}
+                      alt={post.title}
+                      loading="lazy"
+                      width={1200}
+                      height={630}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                  </div>
+                  <div className="p-6 md:p-8">
                 <div className="flex flex-wrap items-center gap-3 mb-3 text-xs">
                   <span className="px-3 py-1 rounded-full bg-primary/10 text-primary font-medium">
                     {post.category}
