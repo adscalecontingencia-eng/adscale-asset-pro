@@ -33,7 +33,7 @@ const HeroSection = () => {
             >
               Quando o leilão aperta, a{" "}
               <span className="text-gradient">qualidade do ativo</span>{" "}
-              é o que mantém o ROAS.
+              é o que mantém o <span className="text-emerald-500 font-bold">ROAS</span>.
             </h1>
 
             <p
@@ -128,7 +128,7 @@ const HeroSection = () => {
             >
               Quando o leilão aperta, a{" "}
               <span className="text-gradient">qualidade do ativo</span>{" "}
-              mantém o ROAS.
+              mantém o <span className="text-emerald-500 font-bold">ROAS</span>.
             </h1>
 
             <p
