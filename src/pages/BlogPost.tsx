@@ -159,6 +159,7 @@ const BlogPost = () => {
         canonical={`/blog/${post.slug}`}
         ogType="article"
         publishedAt={post.publishedAt}
+        image={post.ogImage}
         jsonLd={jsonLd}
       />
       <Navbar />
