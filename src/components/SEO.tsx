@@ -12,7 +12,7 @@ interface SEOProps {
   noIndex?: boolean;
 }
 
-const SITE_URL = "https://adscale.app";
+const SITE_URL = "https://adscalecontingencia.com";
 const DEFAULT_OG = "/og/og-default.jpg";
 
 const SEO = ({ title, description, keywords, canonical, ogType = "website", publishedAt, image, jsonLd, noIndex }: SEOProps) => {

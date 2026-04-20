@@ -12,7 +12,7 @@ interface BreadcrumbsProps {
   className?: string;
 }
 
-const SITE_URL = "https://adscale.app";
+const SITE_URL = "https://adscalecontingencia.com";
 
 const Breadcrumbs = ({ items, className }: BreadcrumbsProps) => {
   const jsonLd = {

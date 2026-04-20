@@ -15,19 +15,19 @@ const Sobre = () => {
       {
         "@type": "AboutPage",
         name: "Sobre a AD Scale",
-        url: "https://adscale.app/sobre",
+        url: "https://adscalecontingencia.com/sobre",
         description:
           "Conheça a AD Scale e Pedro Lucas, fundador especialista em contingência de Meta Ads, BMs Verificadas e operação de alto volume em Facebook Ads.",
       },
       {
         "@type": "Organization",
         name: "AD Scale",
-        url: "https://adscale.app",
-        logo: "https://adscale.app/og/og-default.jpg",
+        url: "https://adscalecontingencia.com",
+        logo: "https://adscalecontingencia.com/og/og-default.jpg",
         founder: {
           "@type": "Person",
           name: "Pedro Lucas",
-          url: "https://adscale.app/autor/pedro-lucas",
+          url: "https://adscalecontingencia.com/autor/pedro-lucas",
         },
         areaServed: "BR",
         knowsAbout: [

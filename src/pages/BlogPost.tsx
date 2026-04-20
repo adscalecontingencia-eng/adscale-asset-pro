@@ -199,27 +199,27 @@ const BlogPost = () => {
     author: {
       "@type": "Person",
       name: "Pedro Lucas",
-      url: "https://adscale.app/autor/pedro-lucas",
-      image: "https://adscale.app/autores/pedro-lucas.jpg",
+      url: "https://adscalecontingencia.com/autor/pedro-lucas",
+      image: "https://adscalecontingencia.com/autores/pedro-lucas.jpg",
     },
     publisher: {
       "@type": "Organization",
       name: "AD Scale",
       logo: {
         "@type": "ImageObject",
-        url: "https://adscale.app/og/og-default.jpg",
+        url: "https://adscalecontingencia.com/og/og-default.jpg",
       },
     },
     keywords: post.keywords.join(", "),
     image: {
       "@type": "ImageObject",
-      url: `https://adscale.app${post.ogImage}`,
+      url: `https://adscalecontingencia.com${post.ogImage}`,
       width: 1200,
       height: 630,
     },
     mainEntityOfPage: {
       "@type": "WebPage",
-      "@id": `https://adscale.app/blog/${post.slug}`,
+      "@id": `https://adscalecontingencia.com/blog/${post.slug}`,
     },
   };
 
@@ -236,7 +236,7 @@ const BlogPost = () => {
         "@type": "HowToStep",
         position: idx + 1,
         name: t.label,
-        url: `https://adscale.app/blog/${post.slug}#${t.id}`,
+        url: `https://adscalecontingencia.com/blog/${post.slug}#${t.id}`,
       })),
     });
   }
