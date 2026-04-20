@@ -21,6 +21,7 @@ export const blogPosts: BlogPost[] = [
     category: "Topo de funil",
     readingTime: "6 min",
     publishedAt: "2025-01-08",
+    ogImage: "/og/og-bm-verificada.jpg",
     content: `
 A Business Manager (BM) é o coração de qualquer operação séria dentro do Meta Ads. Ela centraliza contas de anúncio, páginas, pixels, catálogos e permissões de equipe. Quando essa BM passa pelo processo oficial de verificação de negócio do Meta, ela recebe um selo interno conhecido no mercado como **BM Verificada** — e isso muda completamente como o algoritmo do Meta enxerga a sua estrutura.
 
@@ -59,6 +60,7 @@ Nem toda BM "verificada" no mercado é legítima. Antes de comprar, exija:
     category: "Meio de funil",
     readingTime: "8 min",
     publishedAt: "2025-01-12",
+    ogImage: "/og/og-trust-score.jpg",
     content: `
 "Trust Score" é o termo de mercado para o **score interno de confiança** que o Meta atribui a cada ativo da plataforma — perfis pessoais, páginas, contas de anúncio e BMs. Embora o Meta não publique a fórmula, o comportamento da plataforma e a documentação oficial deixam claros os sinais que pesam nessa pontuação.
 
@@ -101,6 +103,7 @@ Quando você compra um ativo de contingência, está comprando **Trust Score** �
     category: "Meio de funil",
     readingTime: "7 min",
     publishedAt: "2025-01-15",
+    ogImage: "/og/og-bloqueio.jpg",
     content: `
 Toda operação séria no Meta Ads vai sofrer bloqueio em algum momento. A diferença entre um operador iniciante e um gestor sênior é **quanto tempo ele leva pra voltar ao ar**. Este artigo detalha as causas reais de bloqueio segundo o Meta e como construir uma estrutura que aguenta.
 
@@ -153,6 +156,7 @@ Para uma operação que fatura **R$ 80 mil/dia**, cada hora parada equivale a mi
     category: "Meio de funil",
     readingTime: "9 min",
     publishedAt: "2025-01-18",
+    ogImage: "/og/og-warmup.jpg",
     content: `
 Warm-up (aquecimento) é o processo de gastar de forma gradual e controlada nos primeiros dias de uma conta de anúncio para que o Meta a reconheça como conta confiável. Pular essa etapa é o erro mais caro que um gestor pode cometer — mesmo com ativo aged.
 
@@ -219,6 +223,7 @@ Warm-up bem feito é o que separa uma frota de contingência **durável** de uma
     category: "Fundo de funil",
     readingTime: "8 min",
     publishedAt: "2025-01-22",
+    ogImage: "/og/og-fornecedor.jpg",
     content: `
 O mercado de ativos de contingência cresceu — e com ele, fornecedores improvisados que entregam BM "verificada" feita na semana, perfis sem histórico real e zero suporte pós-venda. Para um gestor que opera **R$ 100 mil/dia ou mais**, escolher mal aqui custa caro.
 
@@ -279,6 +284,7 @@ Se ele não souber responder, ele não cultivou o ativo — está revendendo.
     category: "Meio de funil",
     readingTime: "6 min",
     publishedAt: "2025-01-25",
+    ogImage: "/og/og-perfil-aged.jpg",
     content: `
 A maior parte dos operadores foca obsessivamente na BM e na conta de anúncio — e esquece que **toda BM precisa de um perfil pessoal administrando**. Esse perfil é o ponto mais frágil (e mais ignorado) da arquitetura de contingência.
 
@@ -333,6 +339,7 @@ Operações sérias mantêm uma reserva de **5 a 20 perfis aged** prontos pra en
     category: "Topo de funil",
     readingTime: "5 min",
     publishedAt: "2025-01-28",
+    ogImage: "/og/og-pagina-antiga.jpg",
     content: `
 A página (fan page) que aparece como remetente do anúncio carrega muito mais peso do que a maioria dos gestores imagina. Ela influencia CTR, qualidade percebida, custo por resultado e — especialmente — a probabilidade de restrições.
 
@@ -383,6 +390,7 @@ Página antiga é ativo. Ativo gera resultado. Tratar página como descartável 
     category: "Fundo de funil",
     readingTime: "10 min",
     publishedAt: "2025-02-01",
+    ogImage: "/og/og-arquitetura.jpg",
     content: `
 Operação amadora trata bloqueio como acidente. Operação profissional trata como **evento esperado** e arquiteta a estrutura para absorver. Este artigo detalha o modelo de contingência usado por gestores que operam volumes acima de R$ 50 mil/dia.
 
