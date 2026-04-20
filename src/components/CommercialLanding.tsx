@@ -220,7 +220,7 @@ const CommercialLanding = ({
         )}
 
 
-          <h2 id="faq-heading" className="font-display text-2xl md:text-3xl font-bold mb-8">Perguntas frequentes</h2>
+          <section className="container max-w-3xl px-4 mt-20" aria-labelledby="faq-heading">
           <div className="space-y-4">
             {faqs.map((f) => (
               <details key={f.question} className="group border border-border/50 rounded-lg p-5 bg-card/60">
