@@ -7,6 +7,24 @@ import SEO from "@/components/SEO";
 import { blogPosts } from "@/data/blogPosts";
 
 const Blog = () => {
+  const featuredCategories = [
+    {
+      title: "Bloqueios e recuperação",
+      description: "Guias para reduzir downtime, responder revisões e proteger a operação em picos de risco.",
+      href: "/blog/bloqueio-conta-anuncio-meta-como-evitar",
+    },
+    {
+      title: "BM verificada e Trust Score",
+      description: "Conteúdo para entender reputação de ativos, verificação e estabilidade de escala.",
+      href: "/blog/o-que-e-business-manager-verificada-meta",
+    },
+    {
+      title: "Infraestrutura de contingência",
+      description: "Arquitetura, warm-up, fingerprint e ativos aged para sustentar volume no Meta Ads.",
+      href: "/blog/arquitetura-contingencia-meta-ads-operacao-alto-volume",
+    },
+  ];
+
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Blog",
@@ -25,17 +43,17 @@ const Blog = () => {
   return (
     <div className="min-h-screen bg-background overflow-x-hidden w-full max-w-[100vw]">
       <SEO
-        title="Blog AD Scale — Contingência, BM Verificada e Trust Score no Meta Ads"
-        description="Conteúdo técnico sobre ativos de contingência, BMs Verificadas, perfis aged, Trust Score e arquitetura de operações de alto volume em Meta Ads."
+        title="Blog Meta Ads: contingência, BM verificada e Trust Score | AD Scale"
+        description="Aprenda sobre contingência no Meta Ads, bloqueio de conta, BM verificada, Trust Score, perfis aged, Pixel, CAPI e estrutura de escala."
         keywords={[
           "blog meta ads",
-          "contingência facebook ads",
-          "BM verificada blog",
+          "contingência meta ads",
+          "bloqueio conta meta ads",
+          "BM verificada",
           "trust score meta",
           "perfil aged facebook",
-          "página antiga facebook",
-          "arquitetura contingência meta",
-          "operação alto volume meta ads",
+          "pixel vs capi",
+          "warm up meta ads",
         ]}
         canonical="/blog"
         jsonLd={jsonLd}
@@ -53,17 +71,31 @@ const Blog = () => {
               Blog <span className="text-gradient">AD Scale</span>
             </h1>
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-              Arquitetura de contingência, Trust Score, BMs Verificadas e tudo
-              que sustenta operações de alto volume no Meta Ads.
+              Conteúdo educacional e estratégico para reduzir bloqueios, elevar o Trust Score e operar com mais previsibilidade no Meta Ads.
             </p>
           </header>
 
-          <div className="grid gap-6">
+          <section aria-labelledby="clusters-heading" className="mb-12">
+            <h2 id="clusters-heading" className="font-display text-2xl md:text-3xl font-bold mb-6">
+              Comece pelos temas mais buscados
+            </h2>
+            <div className="grid gap-4 md:grid-cols-3">
+              {featuredCategories.map((item) => (
+                <Link key={item.title} to={item.href} className="border border-border/50 bg-card/60 hover:border-primary/40 transition-colors p-5 rounded-lg">
+                  <h3 className="font-display text-lg font-semibold mb-2">{item.title}</h3>
+                  <p className="text-sm text-muted-foreground">{item.description}</p>
+                </Link>
+              ))}
+            </div>
+          </section>
+
+          <section aria-labelledby="artigos-heading" className="grid gap-6">
+            <h2 id="artigos-heading" className="sr-only">Todos os artigos</h2>
             {blogPosts.map((post) => (
               <Link
                 key={post.slug}
                 to={`/blog/${post.slug}`}
-                className="group block rounded-2xl border border-border/50 bg-card/60 backdrop-blur-sm hover:border-primary/40 transition-all overflow-hidden"
+                className="group block rounded-lg border border-border/50 bg-card/60 backdrop-blur-sm hover:border-primary/40 transition-all overflow-hidden"
               >
                 <div className="grid md:grid-cols-[280px_1fr] gap-0">
                   <div className="aspect-[1200/630] md:aspect-auto md:h-full overflow-hidden bg-background">
@@ -77,34 +109,34 @@ const Blog = () => {
                     />
                   </div>
                   <div className="p-6 md:p-8">
-                <div className="flex flex-wrap items-center gap-3 mb-3 text-xs">
-                  <span className="px-3 py-1 rounded-full bg-primary/10 text-primary font-medium">
-                    {post.category}
-                  </span>
-                  <span className="flex items-center gap-1 text-muted-foreground">
-                    <Calendar className="w-3 h-3" />
-                    {new Date(post.publishedAt).toLocaleDateString("pt-BR")}
-                  </span>
-                  <span className="flex items-center gap-1 text-muted-foreground">
-                    <Clock className="w-3 h-3" />
-                    {post.readingTime}
-                  </span>
-                </div>
-                <h2 className="font-display text-xl md:text-2xl font-bold mb-2 group-hover:text-primary transition-colors">
-                  {post.title}
-                </h2>
-                <p className="text-muted-foreground mb-4 leading-relaxed">
-                  {post.description}
-                </p>
-                <span className="inline-flex items-center gap-2 text-primary font-medium text-sm">
-                  Ler artigo completo
-                  <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                </span>
+                    <div className="flex flex-wrap items-center gap-3 mb-3 text-xs">
+                      <span className="px-3 py-1 rounded-full bg-primary/10 text-primary font-medium">
+                        {post.category}
+                      </span>
+                      <span className="flex items-center gap-1 text-muted-foreground">
+                        <Calendar className="w-3 h-3" />
+                        {new Date(post.publishedAt).toLocaleDateString("pt-BR")}
+                      </span>
+                      <span className="flex items-center gap-1 text-muted-foreground">
+                        <Clock className="w-3 h-3" />
+                        {post.readingTime}
+                      </span>
+                    </div>
+                    <h3 className="font-display text-xl md:text-2xl font-bold mb-2 group-hover:text-primary transition-colors">
+                      {post.title}
+                    </h3>
+                    <p className="text-muted-foreground mb-4 leading-relaxed">
+                      {post.description}
+                    </p>
+                    <span className="inline-flex items-center gap-2 text-primary font-medium text-sm">
+                      Ler artigo completo
+                      <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                    </span>
                   </div>
                 </div>
               </Link>
             ))}
-          </div>
+          </section>
         </div>
       </main>
 
