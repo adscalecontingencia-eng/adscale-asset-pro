@@ -17,31 +17,31 @@ const HeroSection = () => {
               style={{ animationDelay: "0.05s" }}
             >
               <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
-              Ativos de Contingência · Trust Score Alto
+              Ativos com Trust Score alto · Curadoria 1 a 1
             </div>
 
             <p
               className="text-muted-foreground uppercase tracking-widest text-sm mb-3 animate-fade-in-up"
               style={{ animationDelay: "0.1s" }}
             >
-              PARA OPERAÇÕES DE ALTO VOLUME NO META
+              FEITO PARA QUEM ESCALA DE VERDADE NO META
             </p>
 
             <h1
               className="font-display text-5xl lg:text-6xl font-bold leading-[1.1] mb-6 animate-fade-in-up"
               style={{ animationDelay: "0.15s" }}
             >
-              ATIVOS QUE NÃO{" "}
-              <span className="text-gradient">CAEM NA PRIMEIRA RAJADA.</span>
+              Sua operação merece ativos{" "}
+              <span className="text-gradient">que aguentam o jogo.</span>
             </h1>
 
             <p
               className="text-muted-foreground text-lg md:text-xl max-w-xl mb-8 leading-relaxed animate-fade-in-up"
               style={{ animationDelay: "0.25s" }}
             >
-              BMs Verificadas, BMs Antigas, Perfis Maduros e Páginas Aged com
-              alto Trust Score dentro do ecossistema Meta. Estrutura para quem
-              opera volume real e não pode parar de escalar.
+              BMs Verificadas, BMs antigas, perfis e páginas com idade real e
+              Trust Score alto no Meta. A estrutura que sustenta o seu volume
+              quando o leilão aperta.
             </p>
 
             <div
@@ -111,30 +111,30 @@ const HeroSection = () => {
               style={{ animationDelay: "0.15s" }}
             >
               <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
-              Ativos High Trust
+              Trust Score alto · Curadoria 1 a 1
             </div>
 
             <p
               className="text-muted-foreground uppercase tracking-widest text-xs mb-2 animate-fade-in-up"
               style={{ animationDelay: "0.2s" }}
             >
-              OPERAÇÕES DE ALTO VOLUME NO META
+              PARA QUEM ESCALA DE VERDADE NO META
             </p>
 
             <h1
               className="font-display text-2xl font-bold leading-[1.1] mb-3 animate-fade-in-up"
               style={{ animationDelay: "0.25s" }}
             >
-              ATIVOS QUE NÃO{" "}
-              <span className="text-gradient">CAEM NA PRIMEIRA RAJADA.</span>
+              Sua operação merece ativos{" "}
+              <span className="text-gradient">que aguentam o jogo.</span>
             </h1>
 
             <p
               className="text-muted-foreground text-sm mb-4 leading-relaxed animate-fade-in-up px-2"
               style={{ animationDelay: "0.3s" }}
             >
-              BMs Verificadas, BMs Antigas, Perfis Maduros e Páginas Aged com
-              alto Trust Score dentro do ecossistema Meta.
+              BMs Verificadas, BMs antigas, perfis e páginas com idade real e
+              Trust Score alto. A estrutura que sustenta seu volume.
             </p>
 
             <div

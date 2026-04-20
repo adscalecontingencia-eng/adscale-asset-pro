@@ -3,39 +3,39 @@ import { Fingerprint, ShieldCheck, Activity, Lock, History, Layers } from "lucid
 const items = [
   {
     icon: Fingerprint,
-    title: "Curadoria por fingerprint",
+    title: "Fingerprint validado um a um",
     description:
-      "Validamos device, IP, cookie e padrão de navegação antes da entrega. Ativo nunca circula em duas operações simultâneas.",
+      "Conferimos device, IP, cookie e padrão de navegação antes da entrega. O mesmo ativo nunca roda em duas operações ao mesmo tempo.",
   },
   {
     icon: History,
-    title: "Idade real auditada",
+    title: "Idade real, sem maquiagem",
     description:
-      "Confirmação de timestamp via histórico do Meta. Sem perfil 'envelhecido' artificialmente em 30 dias — só ativo legítimo.",
+      "Idade comprovada pelo próprio histórico do Meta. Nada de perfil 'envelhecido' em 30 dias — aqui é ativo legítimo, com tempo de vida de verdade.",
   },
   {
     icon: Activity,
-    title: "Trust Score documentado",
+    title: "Trust Score que a gente comprova",
     description:
-      "Scoring interno baseado em strikes, restrições prévias, engajamento orgânico e padrão de gasto histórico.",
+      "Avaliamos strikes, restrições anteriores, engajamento orgânico e padrão de gasto. Você sabe exatamente o que está recebendo antes de começar.",
   },
   {
     icon: ShieldCheck,
-    title: "BM com verificação real",
+    title: "Verificação Meta de verdade",
     description:
-      "Verificação executada via documentação válida e processo oficial Meta. Sem workaround, sem brecha temporária.",
+      "Verificação feita pelo processo oficial, com documentação válida. Sem brecha, sem atalho que cai na próxima atualização da plataforma.",
   },
   {
     icon: Layers,
-    title: "Stack consistente",
+    title: "Stack que conversa entre si",
     description:
-      "Perfil + BM + Página entregues com fingerprint coerente, prontos para vincular sem disparar auditoria cruzada.",
+      "Perfil, BM e página entregues com fingerprint coerente — prontos pra vincular sem acender alerta de auditoria cruzada.",
   },
   {
     icon: Lock,
-    title: "Entrega sob NDA",
+    title: "Atendimento técnico direto",
     description:
-      "Atendimento técnico direto, ativos rastreados e suporte para troubleshooting na primeira ativação.",
+      "Conversa com quem entende, ativos rastreados e suporte ao seu lado nas primeiras ativações. Se travar, a gente resolve junto.",
   },
 ];
 
@@ -47,11 +47,11 @@ const QualitySection = () => {
           <div className="badge-pill mx-auto mb-8">PADRÃO DE QUALIDADE</div>
           <h2 className="font-display text-3xl md:text-5xl lg:text-6xl font-bold mb-4">
             O que separa um ativo{" "}
-            <span className="text-gradient">premium</span> do descartável
+            <span className="text-gradient">premium</span> de um descartável
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Trabalhamos exclusivamente com ativos que sobrevivem a revisão
-            automática, scaling vertical e nichos de alta abrasividade.
+            A gente só trabalha com ativos que aguentam review automática,
+            scaling agressivo e os nichos mais pesados do Meta.
           </p>
         </div>
 

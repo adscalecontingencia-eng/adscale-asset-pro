@@ -5,30 +5,30 @@ const steps = [
   {
     number: 1,
     icon: MessageCircle,
-    title: "Briefing técnico",
+    title: "Briefing direto",
     description:
-      "Falamos diretamente com o head de mídia. Mapeamos vertical, ticket, CPA alvo, volume diário e nível de abrasividade da oferta.",
+      "Conversa entre quem opera. A gente entende sua vertical, ticket, CPA alvo, volume diário e o nível de pressão da oferta.",
   },
   {
     number: 2,
     icon: ClipboardCheck,
-    title: "Match de ativo",
+    title: "Match certo de ativo",
     description:
-      "Selecionamos ativos com fingerprint, idade e Trust Score compatíveis. Sem catálogo público — cada combinação é única.",
+      "Selecionamos os ativos com fingerprint, idade e Trust Score que combinam com a sua operação. Cada combinação é montada pra você.",
   },
   {
     number: 3,
     icon: PackageCheck,
-    title: "Handover seguro",
+    title: "Entrega tranquila",
     description:
-      "Entrega via canal criptografado, com walkthrough técnico de vinculação, configuração de pixel e estratégia de warm-up.",
+      "Handover por canal seguro, com walkthrough de vinculação, setup de pixel e estratégia de warm-up. Você não fica perdido em nada.",
   },
   {
     number: 4,
     icon: Rocket,
-    title: "Escala em produção",
+    title: "Pronto pra escalar",
     description:
-      "Você liga campanha sabendo que o ativo aguenta o leilão. Suporte técnico ativo nas primeiras 72h de operação.",
+      "Você sobe campanha sabendo que a base aguenta o leilão. E nas primeiras 72h a gente segue do seu lado pra qualquer ajuste.",
   },
 ];
 
@@ -39,12 +39,12 @@ const ProcessSection = () => {
         <div className="text-center mb-16">
           <div className="badge-pill mx-auto mb-8">COMO OPERAMOS</div>
           <h2 className="font-display text-3xl md:text-5xl lg:text-6xl font-bold mb-4">
-            Processo de aquisição{" "}
-            <span className="text-gradient italic">profissional</span>
+            Como funciona, do briefing{" "}
+            <span className="text-gradient italic">à escala</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-xl mx-auto">
-            Para quem opera de verdade. Sem catálogo, sem revenda em escala —
-            curadoria 1 a 1.
+            Sem catálogo, sem revenda em escala. Atendimento 1 a 1, pensado pra
+            quem opera volume de verdade.
           </p>
         </div>
 
