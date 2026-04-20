@@ -127,13 +127,6 @@ const Blog = () => {
     })),
   };
 
-  const goToPage = (p: number) => {
-    setPage(p);
-    if (typeof window !== "undefined") {
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    }
-  };
-
   // Build a compact pagination range with ellipsis
   const paginationRange = useMemo<(number | "ellipsis")[]>(() => {
     const range: (number | "ellipsis")[] = [];
