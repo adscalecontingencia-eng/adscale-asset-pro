@@ -7,13 +7,16 @@ interface SEOProps {
   canonical?: string;
   ogType?: "website" | "article";
   publishedAt?: string;
+  image?: string;
   jsonLd?: object;
 }
 
 const SITE_URL = "https://adscale.app";
+const DEFAULT_OG = "/og/og-default.jpg";
 
-const SEO = ({ title, description, keywords, canonical, ogType = "website", publishedAt, jsonLd }: SEOProps) => {
+const SEO = ({ title, description, keywords, canonical, ogType = "website", publishedAt, image, jsonLd }: SEOProps) => {
   const url = canonical ? `${SITE_URL}${canonical}` : SITE_URL;
+  const ogImage = `${SITE_URL}${image || DEFAULT_OG}`;
   return (
     <Helmet>
       <title>{title}</title>
@@ -27,11 +30,15 @@ const SEO = ({ title, description, keywords, canonical, ogType = "website", publ
       <meta property="og:url" content={url} />
       <meta property="og:locale" content="pt_BR" />
       <meta property="og:site_name" content="AD Scale" />
+      <meta property="og:image" content={ogImage} />
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="630" />
       {publishedAt && <meta property="article:published_time" content={publishedAt} />}
 
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
+      <meta name="twitter:image" content={ogImage} />
 
       {jsonLd && <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>}
     </Helmet>
