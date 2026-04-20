@@ -128,7 +128,7 @@ const HeroSection = () => {
             >
               Quando o leilão aperta, a{" "}
               <span className="text-gradient">qualidade do ativo</span>{" "}
-              mantém você no ar.
+              mantém o ROAS.
             </h1>
 
             <p
