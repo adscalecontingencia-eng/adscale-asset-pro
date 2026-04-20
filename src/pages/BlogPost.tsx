@@ -9,6 +9,7 @@ import RelatedPosts from "@/components/RelatedPosts";
 import TableOfContents, { extractTocFromMarkdown } from "@/components/TableOfContents";
 import { getPostBySlug } from "@/data/blogPosts";
 import { WHATSAPP_URL } from "@/lib/whatsapp";
+import pedroPhoto from "@/assets/pedro-lucas-fundador.jpg";
 
 const slugify = (text: string) =>
   text
