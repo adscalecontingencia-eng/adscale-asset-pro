@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { ChevronRight } from "lucide-react";
+import { SITE_URL } from "@/lib/site";
 
 export interface BreadcrumbItem {
   label: string;
@@ -11,8 +12,6 @@ interface BreadcrumbsProps {
   items: BreadcrumbItem[];
   className?: string;
 }
-
-const SITE_URL = "https://adscalecontingencia.com";
 
 const Breadcrumbs = ({ items, className }: BreadcrumbsProps) => {
   const jsonLd = {

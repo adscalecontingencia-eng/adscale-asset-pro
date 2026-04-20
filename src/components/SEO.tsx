@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet-async";
+import { SITE_URL, SITE_DEFAULT_OG } from "@/lib/site";
 
 interface SEOProps {
   title: string;
@@ -11,9 +12,6 @@ interface SEOProps {
   jsonLd?: object;
   noIndex?: boolean;
 }
-
-const SITE_URL = "https://adscalecontingencia.com";
-const DEFAULT_OG = "/og/og-default.jpg";
 
 const SEO = ({ title, description, keywords, canonical, ogType = "website", publishedAt, image, jsonLd, noIndex }: SEOProps) => {
   const url = canonical ? `${SITE_URL}${canonical}` : SITE_URL;
