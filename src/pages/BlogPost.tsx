@@ -293,7 +293,7 @@ const BlogPost = () => {
               aria-label="Ver perfil do autor Pedro Lucas"
             >
               <img
-                src="/src/assets/pedro-lucas-fundador.jpg"
+                src={pedroPhoto}
                 alt="Pedro Lucas, fundador da AD Scale"
                 width={40}
                 height={40}
