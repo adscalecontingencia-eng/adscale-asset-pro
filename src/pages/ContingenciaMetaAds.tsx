@@ -81,6 +81,51 @@ const ContingenciaMetaAds = () => (
       { href: "/bm-verificada", label: "Comprar BM Verificada" },
       { href: "/consultoria-meta-ads", label: "Consultoria Meta Ads" },
     ]}
+    testimonials={[
+      {
+        name: "Marcelo R.",
+        role: "Head de Mídia",
+        operation: "Educação online",
+        quote: "Antes da estrutura de contingência, cada bloqueio custava 3 dias de operação parada. Hoje migramos em menos de 2 horas e o faturamento nem percebe.",
+        metric: "<2h",
+        metricLabel: "tempo de recuperação",
+        volume: "R$ 280k/dia",
+      },
+      {
+        name: "Gustavo T.",
+        role: "Operação Drop Premium",
+        operation: "Nicho de luxo",
+        quote: "Os perfis aged + páginas antigas reduziram drasticamente o gatilho de revisão. Em 45 dias, zero bloqueios mesmo escalando agressivo no Facebook Ads.",
+        metric: "0",
+        metricLabel: "bloqueios em 45 dias",
+        volume: "R$ 150k/dia",
+      },
+      {
+        name: "Larissa F.",
+        role: "Diretora de Mídia",
+        operation: "Marketplace de serviços",
+        quote: "A arquitetura que montaram para nós com BMs reservas em standby virou nosso seguro. Bloqueio agora é incidente operacional, não crise.",
+        metric: "5x",
+        metricLabel: "menos parada operacional",
+        volume: "R$ 200k/dia",
+      },
+    ]}
+    useCases={[
+      {
+        segment: "Alto volume",
+        title: "DTC de suplementos eliminou perdas por bloqueio",
+        scenario: "Operação com R$ 200k/dia perdia em média R$ 600k/mês em receita por bloqueios consecutivos da BM principal.",
+        action: "Implantação de 3 BMs reservas verificadas com perfis aged distintos, rotação semanal e CAPI espelhado em todas.",
+        result: "Perda mensal por bloqueio caiu para menos de R$ 40k em 60 dias, com escala mantida.",
+      },
+      {
+        segment: "Lançamento",
+        title: "Produtora reduziu risco em lançamento crítico",
+        scenario: "Lançamento de R$ 3M previsto para 10 dias, com BM única e histórico de revisão recente — risco alto de queda no pico.",
+        action: "Montagem de pacote de contingência com 2 BMs reservas, perfis aged dedicados e plano de chaveamento em 1h.",
+        result: "Lançamento entregou R$ 3,4M com 1 bloqueio rapidamente contornado, sem perda de janela.",
+      },
+    ]}
     ctaPrimary="Montar minha contingência"
   />
 );

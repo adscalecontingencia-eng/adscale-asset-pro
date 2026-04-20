@@ -81,6 +81,51 @@ const BmVerificada = () => (
       { href: "/contingencia-meta-ads", label: "Estrutura de contingência Meta Ads" },
       { href: "/consultoria-meta-ads", label: "Consultoria Meta Ads para alto volume" },
     ]}
+    testimonials={[
+      {
+        name: "Rafael S.",
+        role: "Gestor de Tráfego",
+        operation: "E-commerce de moda",
+        quote: "Migramos toda a operação para BMs verificadas da AD Scale. Saímos de bloqueios semanais para 60+ dias rodando estável no Facebook Ads.",
+        metric: "60+",
+        metricLabel: "dias sem bloqueio",
+        volume: "R$ 90k/dia",
+      },
+      {
+        name: "Camila P.",
+        role: "Head de Performance",
+        operation: "Infoproduto high-ticket",
+        quote: "A BM veio com selo azul, domínio verificado e CAPI funcionando do primeiro dia. Subimos R$ 15k em 24h sem nenhum sinal de revisão.",
+        metric: "R$ 15k",
+        metricLabel: "no primeiro dia",
+        volume: "R$ 120k/dia",
+      },
+      {
+        name: "Diego A.",
+        role: "Sócio de Agência",
+        operation: "Múltiplos clientes",
+        quote: "Para agência, BM verificada de qualidade é caixa-preta no mercado. Aqui temos handover técnico real e reposição quando precisamos.",
+        metric: "8",
+        metricLabel: "BMs ativas em paralelo",
+        volume: "R$ 320k/dia",
+      },
+    ]}
+    useCases={[
+      {
+        segment: "E-commerce",
+        title: "Loja de cosméticos parou de perder Black Friday",
+        scenario: "Operação rodando R$ 80k/dia em BM antiga não verificada começou a sofrer revisão de domínio na semana da Black Friday.",
+        action: "Migração emergencial para BM Verificada com domínio re-verificado e Pixel/CAPI espelhados em 6 horas.",
+        result: "Campanha voltou ao ar antes da virada de sexta-feira, com pico de R$ 140k em vendas no dia.",
+      },
+      {
+        segment: "Infoproduto",
+        title: "Lançamento de R$ 1M sem instabilidade",
+        scenario: "Lançamento de curso com janela de 7 dias e meta de R$ 1M em vendas — qualquer bloqueio comprometeria o ROI.",
+        action: "Estrutura com BM Verificada principal + 2 BMs reservas verificadas, todas com selo azul e histórico de gasto coerente.",
+        result: "Lançamento entregou R$ 1,3M com zero bloqueio em 7 dias e CAC 22% abaixo do projetado.",
+      },
+    ]}
     ctaPrimary="Quero uma BM Verificada"
   />
 );
