@@ -128,7 +128,7 @@ const HeroSection = () => {
             >
               Quando o leilão aperta, a{" "}
               <span className="text-gradient">qualidade do ativo</span>{" "}
-              mantém o <span className="text-emerald-500 font-bold">ROAS</span>.
+              mantém o <span className="text-primary font-bold">ROAS</span>.
             </h1>
 
             <p
