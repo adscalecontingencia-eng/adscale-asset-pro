@@ -1,12 +1,70 @@
+import { useMemo, useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Calendar, Clock, ArrowRight } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import FooterSection from "@/components/FooterSection";
 import WhatsAppFloat from "@/components/WhatsAppFloat";
 import SEO from "@/components/SEO";
-import { blogPosts } from "@/data/blogPosts";
+import { Button } from "@/components/ui/button";
+import {
+  Pagination,
+  PaginationContent,
+  PaginationItem,
+  PaginationLink,
+  PaginationNext,
+  PaginationPrevious,
+  PaginationEllipsis,
+} from "@/components/ui/pagination";
+import { blogPosts, type BlogPost } from "@/data/blogPosts";
+
+type FunnelFilter = "Todos" | "Topo de funil" | "Meio de funil" | "Fundo de funil";
+
+const FILTERS: { label: string; value: FunnelFilter; short: string }[] = [
+  { label: "Todos", value: "Todos", short: "Todos" },
+  { label: "Topo de funil (ToF)", value: "Topo de funil", short: "ToF" },
+  { label: "Meio de funil (MoF)", value: "Meio de funil", short: "MoF" },
+  { label: "Fundo de funil (BoF)", value: "Fundo de funil", short: "BoF" },
+];
+
+const POSTS_PER_PAGE = 6;
 
 const Blog = () => {
+  const [filter, setFilter] = useState<FunnelFilter>("Todos");
+  const [page, setPage] = useState(1);
+
+  const sortedPosts = useMemo(
+    () =>
+      [...blogPosts].sort(
+        (a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime(),
+      ),
+    [],
+  );
+
+  const filteredPosts = useMemo<BlogPost[]>(
+    () => (filter === "Todos" ? sortedPosts : sortedPosts.filter((p) => p.category === filter)),
+    [filter, sortedPosts],
+  );
+
+  const totalPages = Math.max(1, Math.ceil(filteredPosts.length / POSTS_PER_PAGE));
+  const currentPage = Math.min(page, totalPages);
+  const paginatedPosts = filteredPosts.slice(
+    (currentPage - 1) * POSTS_PER_PAGE,
+    currentPage * POSTS_PER_PAGE,
+  );
+
+  // Reset to page 1 whenever the filter changes
+  useEffect(() => {
+    setPage(1);
+  }, [filter]);
+
+  const counts = useMemo(() => {
+    const base = { Todos: sortedPosts.length, "Topo de funil": 0, "Meio de funil": 0, "Fundo de funil": 0 };
+    sortedPosts.forEach((p) => {
+      base[p.category] = (base[p.category] || 0) + 1;
+    });
+    return base as Record<FunnelFilter, number>;
+  }, [sortedPosts]);
+
   const featuredCategories = [
     {
       title: "Bloqueios e recuperação",
@@ -29,9 +87,10 @@ const Blog = () => {
     "@context": "https://schema.org",
     "@type": "Blog",
     name: "Blog AD Scale — Contingência e Meta Ads",
-    description: "Conteúdo técnico sobre ativos de contingência, BMs Verificadas, Trust Score e operação profissional em Meta Ads.",
+    description:
+      "Conteúdo técnico sobre ativos de contingência, BMs Verificadas, Trust Score e operação profissional em Meta Ads.",
     url: "https://adscale.app/blog",
-    blogPost: blogPosts.map((p) => ({
+    blogPost: sortedPosts.map((p) => ({
       "@type": "BlogPosting",
       headline: p.title,
       description: p.description,
@@ -39,6 +98,29 @@ const Blog = () => {
       url: `https://adscale.app/blog/${p.slug}`,
     })),
   };
+
+  const goToPage = (p: number) => {
+    setPage(p);
+    if (typeof window !== "undefined") {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  };
+
+  // Build a compact pagination range with ellipsis
+  const paginationRange = useMemo<(number | "ellipsis")[]>(() => {
+    const range: (number | "ellipsis")[] = [];
+    const delta = 1;
+    const left = Math.max(2, currentPage - delta);
+    const right = Math.min(totalPages - 1, currentPage + delta);
+
+    range.push(1);
+    if (left > 2) range.push("ellipsis");
+    for (let i = left; i <= right; i++) range.push(i);
+    if (right < totalPages - 1) range.push("ellipsis");
+    if (totalPages > 1) range.push(totalPages);
+
+    return range;
+  }, [currentPage, totalPages]);
 
   return (
     <div className="min-h-screen bg-background overflow-x-hidden w-full max-w-[100vw]">
@@ -71,7 +153,8 @@ const Blog = () => {
               Blog <span className="text-gradient">AD Scale</span>
             </h1>
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-              Conteúdo educacional e estratégico para reduzir bloqueios, elevar o Trust Score e operar com mais previsibilidade no Meta Ads.
+              Conteúdo educacional e estratégico para reduzir bloqueios, elevar o Trust Score e operar com mais
+              previsibilidade no Meta Ads.
             </p>
           </header>
 
@@ -81,7 +164,11 @@ const Blog = () => {
             </h2>
             <div className="grid gap-4 md:grid-cols-3">
               {featuredCategories.map((item) => (
-                <Link key={item.title} to={item.href} className="border border-border/50 bg-card/60 hover:border-primary/40 transition-colors p-5 rounded-lg">
+                <Link
+                  key={item.title}
+                  to={item.href}
+                  className="border border-border/50 bg-card/60 hover:border-primary/40 transition-colors p-5 rounded-lg"
+                >
                   <h3 className="font-display text-lg font-semibold mb-2">{item.title}</h3>
                   <p className="text-sm text-muted-foreground">{item.description}</p>
                 </Link>
@@ -89,54 +176,156 @@ const Blog = () => {
             </div>
           </section>
 
+          <section aria-labelledby="filtros-heading" className="mb-8">
+            <h2 id="filtros-heading" className="sr-only">
+              Filtrar artigos por etapa do funil
+            </h2>
+            <div
+              role="tablist"
+              aria-label="Filtrar por etapa do funil"
+              className="flex flex-wrap gap-2 justify-center"
+            >
+              {FILTERS.map((f) => {
+                const active = filter === f.value;
+                return (
+                  <Button
+                    key={f.value}
+                    role="tab"
+                    aria-selected={active}
+                    variant={active ? "default" : "outline"}
+                    size="sm"
+                    onClick={() => setFilter(f.value)}
+                    className="rounded-full"
+                  >
+                    <span className="hidden sm:inline">{f.label}</span>
+                    <span className="sm:hidden">{f.short}</span>
+                    <span
+                      className={`ml-2 inline-flex items-center justify-center min-w-[1.5rem] h-5 px-1.5 rounded-full text-xs ${
+                        active ? "bg-primary-foreground/20 text-primary-foreground" : "bg-muted text-muted-foreground"
+                      }`}
+                    >
+                      {counts[f.value] ?? 0}
+                    </span>
+                  </Button>
+                );
+              })}
+            </div>
+            <p className="text-center text-sm text-muted-foreground mt-4">
+              Mostrando {paginatedPosts.length} de {filteredPosts.length}{" "}
+              {filteredPosts.length === 1 ? "artigo" : "artigos"}
+              {filter !== "Todos" && <> em <span className="text-foreground font-medium">{filter}</span></>}
+            </p>
+          </section>
+
           <section aria-labelledby="artigos-heading" className="grid gap-6">
-            <h2 id="artigos-heading" className="sr-only">Todos os artigos</h2>
-            {blogPosts.map((post) => (
-              <Link
-                key={post.slug}
-                to={`/blog/${post.slug}`}
-                className="group block rounded-lg border border-border/50 bg-card/60 backdrop-blur-sm hover:border-primary/40 transition-all overflow-hidden"
-              >
-                <div className="grid md:grid-cols-[280px_1fr] gap-0">
-                  <div className="aspect-[1200/630] md:aspect-auto md:h-full overflow-hidden bg-background">
-                    <img
-                      src={post.ogImage}
-                      alt={post.title}
-                      loading="lazy"
-                      width={1200}
-                      height={630}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                    />
-                  </div>
-                  <div className="p-6 md:p-8">
-                    <div className="flex flex-wrap items-center gap-3 mb-3 text-xs">
-                      <span className="px-3 py-1 rounded-full bg-primary/10 text-primary font-medium">
-                        {post.category}
-                      </span>
-                      <span className="flex items-center gap-1 text-muted-foreground">
-                        <Calendar className="w-3 h-3" />
-                        {new Date(post.publishedAt).toLocaleDateString("pt-BR")}
-                      </span>
-                      <span className="flex items-center gap-1 text-muted-foreground">
-                        <Clock className="w-3 h-3" />
-                        {post.readingTime}
+            <h2 id="artigos-heading" className="sr-only">
+              Artigos
+            </h2>
+
+            {paginatedPosts.length === 0 ? (
+              <div className="text-center py-16 border border-dashed border-border/50 rounded-lg">
+                <p className="text-muted-foreground">Nenhum artigo encontrado nesta categoria ainda.</p>
+              </div>
+            ) : (
+              paginatedPosts.map((post) => (
+                <Link
+                  key={post.slug}
+                  to={`/blog/${post.slug}`}
+                  className="group block rounded-lg border border-border/50 bg-card/60 backdrop-blur-sm hover:border-primary/40 transition-all overflow-hidden"
+                >
+                  <div className="grid md:grid-cols-[280px_1fr] gap-0">
+                    <div className="aspect-[1200/630] md:aspect-auto md:h-full overflow-hidden bg-background">
+                      <img
+                        src={post.ogImage}
+                        alt={post.title}
+                        loading="lazy"
+                        width={1200}
+                        height={630}
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      />
+                    </div>
+                    <div className="p-6 md:p-8">
+                      <div className="flex flex-wrap items-center gap-3 mb-3 text-xs">
+                        <span className="px-3 py-1 rounded-full bg-primary/10 text-primary font-medium">
+                          {post.category}
+                        </span>
+                        <span className="flex items-center gap-1 text-muted-foreground">
+                          <Calendar className="w-3 h-3" />
+                          {new Date(post.publishedAt).toLocaleDateString("pt-BR")}
+                        </span>
+                        <span className="flex items-center gap-1 text-muted-foreground">
+                          <Clock className="w-3 h-3" />
+                          {post.readingTime}
+                        </span>
+                      </div>
+                      <h3 className="font-display text-xl md:text-2xl font-bold mb-2 group-hover:text-primary transition-colors">
+                        {post.title}
+                      </h3>
+                      <p className="text-muted-foreground mb-4 leading-relaxed">{post.description}</p>
+                      <span className="inline-flex items-center gap-2 text-primary font-medium text-sm">
+                        Ler artigo completo
+                        <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                       </span>
                     </div>
-                    <h3 className="font-display text-xl md:text-2xl font-bold mb-2 group-hover:text-primary transition-colors">
-                      {post.title}
-                    </h3>
-                    <p className="text-muted-foreground mb-4 leading-relaxed">
-                      {post.description}
-                    </p>
-                    <span className="inline-flex items-center gap-2 text-primary font-medium text-sm">
-                      Ler artigo completo
-                      <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                    </span>
                   </div>
-                </div>
-              </Link>
-            ))}
+                </Link>
+              ))
+            )}
           </section>
+
+          {totalPages > 1 && (
+            <nav aria-label="Paginação dos artigos" className="mt-12">
+              <Pagination>
+                <PaginationContent>
+                  <PaginationItem>
+                    <PaginationPrevious
+                      href="#"
+                      aria-disabled={currentPage === 1}
+                      className={currentPage === 1 ? "pointer-events-none opacity-50" : "cursor-pointer"}
+                      onClick={(e) => {
+                        e.preventDefault();
+                        if (currentPage > 1) goToPage(currentPage - 1);
+                      }}
+                    />
+                  </PaginationItem>
+
+                  {paginationRange.map((item, idx) =>
+                    item === "ellipsis" ? (
+                      <PaginationItem key={`e-${idx}`}>
+                        <PaginationEllipsis />
+                      </PaginationItem>
+                    ) : (
+                      <PaginationItem key={item}>
+                        <PaginationLink
+                          href="#"
+                          isActive={item === currentPage}
+                          className="cursor-pointer"
+                          onClick={(e) => {
+                            e.preventDefault();
+                            goToPage(item);
+                          }}
+                        >
+                          {item}
+                        </PaginationLink>
+                      </PaginationItem>
+                    ),
+                  )}
+
+                  <PaginationItem>
+                    <PaginationNext
+                      href="#"
+                      aria-disabled={currentPage === totalPages}
+                      className={currentPage === totalPages ? "pointer-events-none opacity-50" : "cursor-pointer"}
+                      onClick={(e) => {
+                        e.preventDefault();
+                        if (currentPage < totalPages) goToPage(currentPage + 1);
+                      }}
+                    />
+                  </PaginationItem>
+                </PaginationContent>
+              </Pagination>
+            </nav>
+          )}
         </div>
       </main>
 
