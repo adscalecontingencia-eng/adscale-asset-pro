@@ -839,6 +839,740 @@ Honestidade técnica: nem toda operação precisa de frota grande de contingênc
 Para o restante — especialmente quem opera **R$ 30k+/dia** ou trabalha em nichos sensíveis (dropshipping, infoproduto, finanças, suplementos) — contingência tem ROI matemático de 5-20x. Não é despesa: é o investimento de melhor retorno da operação.
 `,
   },
+  {
+    slug: "trust-score-facebook-ads-como-meta-avalia-conta",
+    title: "Trust Score no Facebook Ads: como o Meta avalia sua conta em 2026",
+    description: "Entenda o que é Trust Score no Facebook Ads e Meta, quais sinais elevam ou derrubam sua pontuação interna e como proteger contas para escalar com previsibilidade.",
+    keywords: ["trust score facebook ads", "trust score meta", "como funciona trust score", "score de confiança facebook", "reputação conta facebook ads", "como meta avalia conta"],
+    category: "Topo de funil",
+    readingTime: "7 min",
+    publishedAt: "2026-04-22",
+    ogImage: "/og/og-trust-score-facebook.jpg",
+    content: `
+O Trust Score é o "score de crédito" interno do Meta. Ele não aparece no Gerenciador, mas decide silenciosamente quem escala e quem trava no Facebook Ads.
+
+## O que é Trust Score no Facebook Ads
+
+É uma pontuação interna que o Meta atribui a cada ativo — conta de anúncio, BM, perfil, página, pixel — com base em centenas de sinais comportamentais, técnicos e documentais. Quanto maior o score, maior a confiança do algoritmo: mais limite, menos revisão, menos bloqueio.
+
+## Os 5 grupos de sinais que mais pesam
+
+### 1. Identidade e verificação
+- Verificação de negócio ativa
+- Domínio verificado
+- Documentos compatíveis com CNPJ
+- Selo azul (quando aplicável)
+
+### 2. Comportamento de pagamento
+- Histórico longo sem chargeback
+- Cartão consistente, idealmente empresarial
+- Pagamentos em dia, sem fraudes
+
+### 3. Fingerprint técnico
+- IP residencial coerente com o país do anunciante
+- Mesmo dispositivo e navegador ao longo do tempo
+- Ausência de sinais de automação ou VPNs suspeitas
+
+### 4. Histórico de criativos
+- Baixa taxa de reprovação
+- Ausência de termos sensíveis recorrentes
+- Landing pages compatíveis com políticas
+
+### 5. Comportamento da conta
+- Crescimento gradual de gasto (warm-up)
+- Sem mudanças bruscas de nicho ou país
+- Página com engajamento real
+
+## Por que isso importa para Facebook Ads e Meta Ads
+
+Contas com Trust Score alto recebem **limites de gasto maiores**, **menos revisões automáticas**, **recuperação mais rápida em appeals** e **acesso prioritário a recursos avançados** como CAPI, catálogos e WhatsApp Business API.
+
+## Como aumentar Trust Score sem cair em armadilhas
+
+> **Regra de ouro:** Trust Score se constrói com tempo e consistência. Não existe atalho técnico que substitua histórico real.
+
+1. Faça **warm-up disciplinado** das contas novas
+2. Mantenha **fingerprint estável** (mesmo IP, dispositivo)
+3. Verifique **domínio e negócio** assim que possível
+4. Evite criar e deletar ativos em sequência
+5. Considere ativos com histórico já maduro para acelerar
+
+## Conexão com contingência
+
+Operações sérias não dependem de uma única conta com Trust Score alto. Elas mantêm **uma frota de ativos com score elevado em standby** — exatamente o que uma estrutura de contingência profissional entrega.
+
+Se você quer eliminar a aposta no Trust Score isolado, conheça [a estrutura de contingência para Meta Ads](/contingencia-meta-ads) ou avalie [adquirir BM Verificada com histórico real](/bm-verificada).
+`,
+  },
+  {
+    slug: "recuperar-conta-anuncio-bloqueada-facebook-ads",
+    title: "Como recuperar conta de anúncio bloqueada no Facebook Ads: passo a passo",
+    description: "Guia técnico para recuperar conta de anúncio bloqueada no Facebook e Meta Ads: fluxo de appeal, prazos reais, erros comuns e quando partir para contingência.",
+    keywords: ["recuperar conta de anúncio facebook", "conta de anúncio bloqueada", "desbloqueio facebook ads", "appeal facebook ads", "como desbloquear bm facebook", "recuperar bm meta"],
+    category: "Meio de funil",
+    readingTime: "9 min",
+    publishedAt: "2026-04-25",
+    ogImage: "/og/og-recuperar-conta-bloqueada.jpg",
+    content: `
+Bloqueio no Facebook Ads não é se, é quando. O que separa operações que voltam ao ar em horas das que ficam dias paradas é o processo de recuperação.
+
+## O que aconteceu: tipos de bloqueio
+
+Antes de qualquer ação, identifique exatamente o que foi restringido:
+
+| Tipo | Sinal no Gerenciador | Gravidade |
+|---|---|---|
+| **Conta de anúncio desativada** | "Sua conta de anúncio foi desativada" | Média |
+| **BM restrita** | "Acesso limitado ao Business Manager" | Alta |
+| **Perfil pessoal bloqueado** | "Você não pode anunciar" | Crítica |
+| **Página com violação** | Aviso na página, não na conta | Média |
+| **Pagamento recusado** | "Não foi possível cobrar" | Baixa (não é bloqueio real) |
+
+Cada tipo tem um fluxo de appeal diferente.
+
+## Passo 1 — Não toque em nada nas primeiras 2h
+
+Erros mais comuns nas primeiras horas:
+- Criar nova conta de anúncio na mesma BM
+- Trocar método de pagamento na pressa
+- Pedir appeal antes de entender o motivo
+- Criar nova BM com o mesmo perfil
+
+Cada uma dessas ações pode **agravar a restrição** ou propagá-la para outros ativos.
+
+## Passo 2 — Identifique o motivo real
+
+Vá em **Qualidade da Conta** (Account Quality) e leia a notificação completa. Os motivos mais comuns no Facebook Ads:
+
+1. Política de produto/serviço (especialmente saúde, finanças, dropshipping)
+2. Página de destino fora de conformidade
+3. Pagamento suspeito
+4. Atividade incomum (mudança de IP, dispositivo, país)
+5. Violação por criativo aprovado anteriormente (revisão retroativa)
+
+## Passo 3 — Abra o appeal correto
+
+> **Importante:** o botão "Solicitar revisão" só pode ser usado **uma vez** na maioria dos casos. Não chute.
+
+Estrutura de appeal eficaz:
+- **1 parágrafo** explicando o contexto da operação
+- **Documentação anexa** (CNPJ, contrato social, comprovante de domínio)
+- **Linguagem objetiva**, sem emoção
+- **Em inglês** quando possível (acelera triagem)
+
+## Passo 4 — Prazos reais (não os oficiais)
+
+| Cenário | Prazo médio real |
+|---|---|
+| Appeal de conta de anúncio | 24h a 7 dias |
+| Appeal de BM | 3 a 14 dias |
+| Appeal de perfil pessoal | 7 a 21 dias |
+| Casos com selo azul | Geralmente <48h |
+
+## Passo 5 — Plano B: ativar contingência
+
+Se o appeal demorar mais de **48h** e sua operação roda **R$ 20k+/dia**, o ROI de esperar despenca. É a hora de:
+
+1. Subir uma BM reserva já verificada
+2. Migrar pixel/CAPI espelhado
+3. Reativar campanhas com mesma estrutura
+4. Manter o appeal correndo em paralelo
+
+## Erros que destroem a recuperação
+
+- Usar a mesma página em várias BMs novas em sequência
+- Trocar de cartão sem warm-up
+- Criar perfis novos a partir do mesmo dispositivo bloqueado
+- Apagar criativos antes da análise
+
+## Quando recuperação não vale o esforço
+
+Em alguns casos (perfil banido por reincidência, página com violação grave), insistir é desperdício. Migrar para uma estrutura limpa com [contingência profissional](/contingencia-meta-ads) é mais rápido e barato.
+
+## Conclusão
+
+Recuperação de conta no Facebook Ads é processo, não sorte. Quem trata bloqueio como incidente operacional — com fluxo, contingência e disciplina — perde horas. Quem improvisa, perde semanas e faturamento.
+
+Para entender a arquitetura completa, veja também [como evitar bloqueio de conta de anúncio no Meta](/blog/bloqueio-conta-anuncio-meta-como-evitar).
+`,
+  },
+  {
+    slug: "quanto-custa-bm-verificada-facebook-2026",
+    title: "Quanto custa uma BM Verificada Facebook em 2026: preço, riscos e o que avaliar",
+    description: "Faixa de preço real de BM Verificada Facebook e Meta em 2026, o que diferencia ativos baratos dos premium, riscos comuns e checklist para comprar com segurança.",
+    keywords: ["quanto custa bm verificada", "preço bm verificada facebook", "comprar bm verificada", "valor business manager verificada", "bm verificada facebook preço", "comprar bm meta verificada"],
+    category: "Fundo de funil",
+    readingTime: "8 min",
+    publishedAt: "2026-04-29",
+    ogImage: "/og/og-quanto-custa-bm-verificada.jpg",
+    content: `
+"Quanto custa uma BM Verificada?" é a pergunta mais frequente de quem busca contingência para Facebook Ads. A resposta honesta: depende do que está dentro dela.
+
+## Faixa de preço real de mercado em 2026
+
+| Tipo de BM Verificada | Faixa de preço | Para quem |
+|---|---|---|
+| **Verificação fresca, sem histórico** | R$ 800 – R$ 2.000 | Operações iniciantes (alto risco) |
+| **Verificada com histórico de gasto baixo** | R$ 2.500 – R$ 5.000 | Operações em crescimento |
+| **Verificada com histórico alto + selo azul** | R$ 6.000 – R$ 15.000 | Operações de alto volume |
+| **Pacote contingência (BM + perfil aged + página)** | R$ 8.000 – R$ 25.000 | Operações profissionais |
+
+> **Atenção:** ofertas abaixo de R$ 800 quase sempre escondem BMs com histórico ruim, perfis suspeitos ou ativos prestes a cair.
+
+## O que define o preço de verdade
+
+### 1. Histórico documental
+BM verificada há 6 meses vale mais que verificada ontem. O Meta dá peso à **maturidade da verificação**, não só ao status atual.
+
+### 2. Histórico de gasto
+Uma BM que já gastou R$ 50k+ sem incidente tem Trust Score muito superior à zero-spend.
+
+### 3. Selo azul de página
+Páginas com selo azul vinculadas elevam o pacote em 2-3x o preço — e em estabilidade real.
+
+### 4. Domínio e CAPI configurados
+BMs entregues prontas (domínio verificado, pixel + CAPI funcionando) economizam dias de setup.
+
+### 5. Perfil administrador
+O perfil que controla a BM é tão importante quanto a BM. Perfis aged reais elevam preço e estabilidade.
+
+## Por que BM barata sai caro
+
+Cálculo prático para operação de R$ 50k/dia:
+
+- **BM barata (R$ 1.000)** caindo em 5 dias = **R$ 250k de receita perdida** no período
+- **BM premium (R$ 8.000)** rodando 60 dias = **R$ 3M de receita protegida**
+
+A diferença de R$ 7.000 vira ROI de **400x** em proteção operacional.
+
+## Checklist antes de comprar
+
+✅ Vendedor mostra histórico de gasto e idade da verificação?
+✅ Domínio já está verificado dentro da BM?
+✅ Perfil administrador é aged ou recém-criado?
+✅ Há briefing técnico de handover (IP, fingerprint, warm-up)?
+✅ Suporte pós-venda existe ou só "vendeu, sumiu"?
+✅ Pacote inclui página, pixel e CAPI configurados?
+
+Se 3+ dessas respostas forem "não", o preço baixo é armadilha.
+
+## Onde mora o golpe
+
+- **BM "verificada" reciclada** que cairá em dias
+- **Verificação obtida com documento de terceiros** (revertida quando descoberto)
+- **BM clonada** vendida para múltiplos compradores
+- **Selo azul falso** (alegado mas não comprovado)
+
+## Quanto vale para sua operação
+
+Regra prática de orçamento:
+
+- **Operação até R$ 10k/dia:** invista 1-2% do faturamento mensal em ativos
+- **R$ 10k–R$ 50k/dia:** 0,5-1% do faturamento mensal
+- **R$ 50k+/dia:** 0,3-0,5% do faturamento mensal
+
+Para operações sérias, o investimento em BM Verificada premium tem retorno em **menos de 7 dias** comparado ao custo de uma única parada operacional.
+
+## Próximos passos
+
+Se quer evitar o risco do mercado paralelo, [conheça nossa curadoria 1 a 1 de BM Verificada](/bm-verificada) — com handover técnico real, suporte e reposição garantida.
+
+Para entender a estrutura completa, veja também [como escolher fornecedor de BM verificada](/blog/como-escolher-fornecedor-bm-verificada) e [a arquitetura de contingência para alto volume](/blog/arquitetura-contingencia-meta-ads-operacao-alto-volume).
+`,
+  },
+  {
+    slug: "limite-de-gasto-facebook-ads-como-aumentar",
+    title: "Limite de gasto no Facebook Ads: como aumentar e por que sua conta não escala",
+    description: "Por que o Facebook Ads e Meta limitam o gasto da sua conta, como o spending cap funciona e o passo a passo técnico para aumentar limite com segurança.",
+    keywords: ["limite de gasto facebook ads", "spending cap facebook", "aumentar limite facebook ads", "conta não escala facebook", "limite diário facebook ads", "limite meta ads"],
+    category: "Meio de funil",
+    readingTime: "7 min",
+    publishedAt: "2026-05-02",
+    ogImage: "/og/og-limite-gasto-facebook.jpg",
+    content: `
+Se sua conta de Facebook Ads "não escala" mesmo com criativo bom e oferta validada, provavelmente o gargalo não é estratégico — é o **limite de gasto interno** que o Meta impôs.
+
+## O que é spending cap (limite de gasto)
+
+O Meta aplica dois tipos de limite:
+
+1. **Limite de conta (account spending limit):** definido pelo anunciante
+2. **Limite interno do Meta:** invisível, definido pelo algoritmo com base em Trust Score, histórico e risco
+
+O segundo é o que mais trava operações em escala — e ninguém te avisa.
+
+## Por que o Meta limita sua conta
+
+- Conta nova sem histórico de pagamento
+- Aumento brusco de gasto (de R$ 100 para R$ 5.000/dia em poucos dias)
+- Cartão sem histórico anterior
+- Perfil administrador com pouca idade
+- Mudança de país, IP ou dispositivo
+- BM não verificada
+- Setor de risco (saúde, finanças, dropshipping)
+
+## Sinais de que você bateu o teto invisível
+
+- CPM dispara sem motivo aparente
+- Campanhas "saem do leilão" no meio do dia
+- Entregas erráticas mesmo com budget aumentado
+- Pagamento processa, mas anúncios não rodam
+- Mensagem genérica "houve um problema com seu pagamento"
+
+## Como aumentar limite no Facebook Ads: passo a passo
+
+### 1. Faça warm-up real
+Não pule etapas. Sequência típica para conta nova:
+- **Dias 1-3:** R$ 30/dia
+- **Dias 4-7:** R$ 100/dia
+- **Dias 8-14:** R$ 300/dia
+- **Dias 15-30:** R$ 800/dia
+- **30+ dias:** crescimento de 30-50% por semana
+
+### 2. Pague antes de ser cobrado
+Pagamento manual antecipado (prepago) sinaliza solvência. Faça pagamentos parciais no meio do ciclo.
+
+### 3. Verifique negócio e domínio
+BM verificada + domínio verificado liberam limites maiores naturalmente.
+
+### 4. Mantenha fingerprint estável
+Mesmo IP, mesmo dispositivo, mesmo navegador. Evite logar de múltiplos lugares.
+
+### 5. Cartão empresarial coerente
+Cartão da empresa que está no CNPJ da BM verificada = sinal forte de legitimidade.
+
+### 6. Solicite aumento manual (quando aplicável)
+Em conta de anúncio: **Configurações → Limite de gasto da conta → Alterar**. Para limites internos, abra ticket com Meta Business Support apresentando histórico.
+
+## Quando o limite não sobe — e o que fazer
+
+Algumas contas simplesmente **não saem de R$ 1k–R$ 5k/dia** mesmo com warm-up perfeito. Geralmente porque:
+
+- Trust Score do perfil administrador é baixo
+- BM tem histórico ruim anterior
+- IP/fingerprint sinaliza risco
+
+Nesses casos, o caminho mais rápido é **migrar para um ativo com histórico maduro** ao invés de tentar reabilitar o atual.
+
+## Como contingência destrava escala
+
+Operações em escala mantêm múltiplas BMs com Trust Score alto rodando em paralelo. O limite "agregado" da operação vira a soma dos limites individuais — e cada conta entrega o que pode sem forçar.
+
+> **Estratégia comum em alto volume:** 4 BMs verificadas a R$ 50k/dia cada = R$ 200k/dia totais, sem nenhuma forçar limite.
+
+## Próximos passos
+
+Se sua conta travou em um teto invisível, [uma consultoria técnica](/consultoria-meta-ads) pode mapear se o gargalo é warm-up, fingerprint, BM ou estratégia. Para destravar via ativos, [conheça as BMs Verificadas com limites maiores](/bm-verificada).
+`,
+  },
+  {
+    slug: "dominio-verificado-facebook-como-configurar-ios14",
+    title: "Domínio verificado no Facebook: como configurar e impacto em iOS 14+",
+    description: "Guia técnico para verificar domínio no Facebook Business: métodos DNS, meta tag e arquivo HTML, priorização de eventos e impacto direto em iOS 14+ e CAPI.",
+    keywords: ["domínio verificado facebook", "verificar domínio meta", "ios 14 facebook ads", "domain verification facebook", "configurar domínio business manager", "priorização de eventos meta"],
+    category: "Topo de funil",
+    readingTime: "8 min",
+    publishedAt: "2026-05-06",
+    ogImage: "/og/og-dominio-verificado-facebook.jpg",
+    content: `
+Verificar domínio no Facebook deixou de ser opcional desde a atualização do iOS 14. Hoje é pré-requisito para qualquer operação séria de Meta Ads.
+
+## O que é verificação de domínio
+
+É o processo pelo qual você prova ao Meta que controla um domínio específico. Após verificado, **só esse domínio pode configurar e priorizar eventos** de conversão associados ao Pixel e à CAPI.
+
+## Por que se tornou obrigatório com iOS 14+
+
+Com a App Tracking Transparency (ATT) da Apple, o Meta criou o **Aggregated Event Measurement (AEM)** — que limita a 8 eventos priorizados por domínio. Sem domínio verificado:
+
+- Você não pode priorizar eventos
+- Conversões em iOS são severamente subreportadas
+- CAPI perde poder de matching
+- Otimização de campanha fica cega
+
+## Os 3 métodos de verificação
+
+### 1. Meta tag (mais rápido)
+- Vá em **Business Settings → Brand Safety → Domains**
+- Adicione o domínio
+- Copie a meta tag fornecida
+- Cole no head da home do site
+- Clique em **Verify**
+
+### 2. Arquivo HTML
+- Baixe o arquivo .html fornecido pelo Meta
+- Hospede em seudominio.com/nome-do-arquivo.html
+- Clique em **Verify**
+
+### 3. Registro DNS TXT (mais robusto)
+- Adicione um registro TXT no painel DNS:
+  - Nome: @
+  - Valor: facebook-domain-verification=ABC123...
+- Aguarde propagação (até 72h)
+- Clique em **Verify**
+
+> **Recomendação técnica:** prefira **DNS TXT**. É o método mais resistente a mudanças no site (troca de tema, migração de CMS, etc).
+
+## Priorização de eventos: o que fazer depois
+
+Após verificar o domínio:
+
+1. Vá em **Events Manager → Aggregated Event Measurement**
+2. Selecione o domínio verificado
+3. Liste os 8 eventos por ordem de valor para o negócio
+4. Coloque conversão de maior valor (Purchase) no topo
+
+Em e-commerce típico:
+1. Purchase
+2. Initiate Checkout
+3. Add to Cart
+4. View Content
+5. Add Payment Info
+6. Search
+7. Lead
+8. Contact
+
+## Erros comuns
+
+- **Verificar domínio em BM errada** — só uma BM pode verificar cada domínio. Decida com cuidado.
+- **Subdomínios** — loja.seudominio.com precisa de verificação separada da raiz
+- **Apex vs www** — verifique a forma que aparece no anúncio
+- **Múltiplos domínios** — cada loja precisa do próprio processo
+
+## Impacto em CAPI e matching
+
+Domínio verificado + CAPI corretamente configurada eleva o **Event Match Quality (EMQ)** acima de 8/10. Isso significa:
+
+- Audiências mais precisas
+- Lookalikes mais qualificados
+- Otimização de algoritmo mais rápida
+- ROAS reportado mais próximo do real
+
+## Próximos passos
+
+Se você opera múltiplas lojas ou clientes, entender em **qual BM verificar** é estratégico. [Uma consultoria técnica](/consultoria-meta-ads) ajuda a desenhar essa arquitetura. Veja também [Pixel vs CAPI no Meta Ads](/blog/pixel-vs-capi-conversions-api-meta-ads) para complementar a stack.
+`,
+  },
+  {
+    slug: "consultoria-meta-ads-vs-curso-quando-contratar",
+    title: "Consultoria Meta Ads vs curso: quando contratar especialista em Facebook Ads",
+    description: "Quando consultoria de Meta Ads e Facebook Ads supera curso: critérios objetivos, comparativo de custo-benefício e perfil de operação que justifica especialista.",
+    keywords: ["consultoria meta ads", "consultor facebook ads", "especialista em facebook ads", "consultoria vs curso meta", "vale a pena consultoria meta ads", "contratar consultor facebook"],
+    category: "Fundo de funil",
+    readingTime: "8 min",
+    publishedAt: "2026-05-09",
+    ogImage: "/og/og-consultoria-meta-ads-vs-curso.jpg",
+    content: `
+Curso ensina o caminho geral. Consultoria resolve o seu caminho. Saber quando trocar um pelo outro pode significar meses de tentativa e erro evitados em Meta Ads e Facebook Ads.
+
+## A diferença real entre os dois formatos
+
+| | Curso | Consultoria |
+|---|---|---|
+| **Conteúdo** | Genérico, escalável | Sob medida, do seu ativo |
+| **Foco** | Aprender o conceito | Resolver o problema |
+| **Tempo até resultado** | Semanas/meses | Dias |
+| **Custo** | R$ 500 – R$ 5.000 | R$ 3.000 – R$ 30.000+ |
+| **Quem se beneficia** | Iniciantes/intermediários | Operações em escala/em crise |
+
+## Quando curso resolve
+
+- Você está começando e ainda não opera com volume
+- Quer entender fundamentos (criativo, leilão, segmentação)
+- Tem tempo para testar e errar
+- Operação está abaixo de R$ 5k/dia consistente
+
+Para esse perfil, gastar com consultoria é desperdício. O retorno do conhecimento básico vem de praticar, não de pagar diagnóstico.
+
+## Quando consultoria é a única saída
+
+### 1. Sua operação travou em escala
+Você roda R$ 30k+/dia mas não consegue passar disso há semanas. Provavelmente o gargalo é técnico (Trust Score, fingerprint, CAPI, BM) — não estratégico.
+
+### 2. Bloqueios estão te custando faturamento
+Se cada bloqueio te custa R$ 50k+ de receita parada, qualquer hora de especialista paga 10x.
+
+### 3. Você não sabe por que CAC subiu
+Curso não vai te explicar **o seu** caso. Diagnóstico técnico sim.
+
+### 4. Você opera múltiplas contas/clientes (agência)
+Padronizar arquitetura e governança é trabalho de consultoria, não de aula gravada.
+
+### 5. Você está lançando algo de alto risco
+Lançamento de R$ 1M+ não é hora de testar conhecimento de curso — é hora de blindar com quem já fez 50 lançamentos.
+
+## O que uma boa consultoria de Facebook Ads entrega
+
+- **Auditoria técnica** de BM, perfis, páginas, pixel, CAPI
+- **Diagnóstico de Trust Score** e fingerprint
+- **Plano de contingência** sob medida
+- **Roadmap priorizado** de ajustes
+- **Acompanhamento técnico** opcional
+
+Tudo isso entregue em **dias**, não em **meses de curso**.
+
+## Como avaliar um consultor
+
+✅ Já operou alto volume na prática?
+✅ Mostra casos reais com números?
+✅ Entende infraestrutura (BM, CAPI, fingerprint), não só criativo?
+✅ Entrega checklist executável, não slide motivacional?
+✅ Tem opinião técnica clara, mesmo desconfortável?
+
+## ROI matemático
+
+Operação rodando R$ 50k/dia com CAC mal calibrado:
+
+- **Curso de R$ 2.000:** você aprende em 60 dias, melhora marginal de 5%
+- **Consultoria de R$ 8.000:** diagnóstico em 7 dias, melhora de 15-25%
+
+Em 30 dias, a consultoria gera entre **R$ 75k e R$ 375k** a mais em margem. ROI de 10-50x.
+
+## Quando os dois fazem sentido juntos
+
+Operações maduras combinam:
+- **Curso** para o time interno aprender fundamentos
+- **Consultoria** para resolver gargalos técnicos pontuais
+- **Mentoria contínua** para otimização recorrente
+
+## Próximos passos
+
+Se sua operação travou em escala, sofre bloqueios recorrentes ou está sem clareza técnica, [agende uma consultoria Meta Ads e Facebook Ads](/consultoria-meta-ads) com diagnóstico real. Para entender a base estrutural, leia também [como evitar bloqueio de conta de anúncio](/blog/bloqueio-conta-anuncio-meta-como-evitar).
+`,
+  },
+  {
+    slug: "checklist-auditoria-bm-facebook-18-itens",
+    title: "Checklist de auditoria de BM Facebook: 18 itens antes de escalar",
+    description: "Checklist completo de auditoria de Business Manager Facebook em 18 itens técnicos: verificação, perfis, páginas, pixel, CAPI, contingência e governança.",
+    keywords: ["auditoria de bm facebook", "checklist business manager", "auditoria facebook ads", "como auditar bm meta", "diagnóstico bm facebook", "checklist meta ads"],
+    category: "Meio de funil",
+    readingTime: "9 min",
+    publishedAt: "2026-05-13",
+    ogImage: "/og/og-checklist-auditoria-bm.jpg",
+    content: `
+Antes de escalar gasto no Facebook Ads, audite a infraestrutura. Esses 18 itens revelam 90% dos problemas que travam operações em alto volume.
+
+## Bloco 1 — Identidade e verificação (itens 1-4)
+
+### 1. BM tem verificação de negócio ativa
+- ✅ Documentos compatíveis com CNPJ
+- ✅ Endereço comercial validado
+- ✅ Status verde em **Business Settings → Business Info**
+
+### 2. Domínio verificado
+- ✅ Pelo menos um domínio verificado por DNS TXT
+- ✅ Apex e www consistentes
+- ✅ Subdomínios principais verificados
+
+### 3. Página com selo (quando aplicável)
+- ✅ Selo azul em páginas de marca
+- ✅ Categoria correta
+- ✅ Avaliações ativas
+
+### 4. Documento da empresa coerente
+- ✅ CNPJ ativo na Receita
+- ✅ Razão social bate com o que aparece na BM
+- ✅ Sem pendências fiscais
+
+## Bloco 2 — Perfis administradores (itens 5-7)
+
+### 5. Perfis admin são aged
+- ✅ Mínimo 6 meses de idade
+- ✅ Histórico de uso real (posts, amigos, interações)
+- ✅ Sem flags anteriores
+
+### 6. Permissões corretamente atribuídas
+- ✅ Princípio do menor privilégio
+- ✅ Admins essenciais identificados
+- ✅ Sem ex-funcionários ainda com acesso
+
+### 7. 2FA ativo em todos os perfis
+- ✅ Autenticação em dois fatores obrigatória
+- ✅ Backup codes guardados
+- ✅ Telefone de recuperação atualizado
+
+## Bloco 3 — Estrutura de ativos (itens 8-11)
+
+### 8. Contas de anúncio organizadas
+- ✅ Nomenclatura padrão (cliente, vertical, país)
+- ✅ Sem contas zombies
+- ✅ Limite de gasto coerente com histórico
+
+### 9. Pixel único e bem configurado
+- ✅ 1 pixel principal por loja/marca
+- ✅ Eventos padrão (Purchase, ATC, ViewContent) ativos
+- ✅ Sem eventos duplicados
+
+### 10. CAPI funcionando com EMQ alto
+- ✅ Event Match Quality > 7/10
+- ✅ Deduplicação Pixel + CAPI ativa
+- ✅ Server-side coberto
+
+### 11. Catálogo (se e-commerce) saudável
+- ✅ Feed atualizado nas últimas 24h
+- ✅ Menos de 5% de itens reprovados
+- ✅ Eventos do catálogo associados
+
+## Bloco 4 — Governança e contingência (itens 12-15)
+
+### 12. Existe plano de contingência documentado
+- ✅ Pelo menos 1 BM reserva pronta
+- ✅ Fluxo de migração escrito
+- ✅ Responsável definido
+
+### 13. Backup de criativos e estruturas
+- ✅ Criativos salvos fora da plataforma
+- ✅ Configurações de campanha exportadas
+- ✅ Públicos salvos
+
+### 14. Acessos de fornecedores externos limitados
+- ✅ Apenas o necessário
+- ✅ Revisão trimestral
+- ✅ Logs de atividade monitorados
+
+### 15. Histórico de bloqueios mapeado
+- ✅ Documentação de cada incidente
+- ✅ Padrões identificados
+- ✅ Aprendizados aplicados
+
+## Bloco 5 — Saúde técnica (itens 16-18)
+
+### 16. Fingerprint estável
+- ✅ Mesmo IP residencial coerente com país
+- ✅ Mesmo dispositivo principal
+- ✅ Sem mudanças bruscas no último ano
+
+### 17. Pagamento limpo
+- ✅ Cartão empresarial alinhado ao CNPJ
+- ✅ Histórico sem chargebacks
+- ✅ Pagamentos em dia
+
+### 18. Trust Score percebido alto
+- ✅ Sem revisões frequentes
+- ✅ Limites crescendo organicamente
+- ✅ Aprovações de criativo rápidas
+
+## Como usar o checklist
+
+1. Faça a auditoria **uma vez por trimestre**
+2. Mantenha planilha viva com status de cada item
+3. Trate qualquer "não" como prioridade técnica
+4. Documente incidentes para aprender padrões
+
+## Quando contratar especialista
+
+Se você marcou "não" em **5+ itens** ou opera **R$ 30k+/dia**, [uma consultoria técnica](/consultoria-meta-ads) acelera a correção. Para reforço de contingência, conheça [a estrutura completa para alto volume](/contingencia-meta-ads).
+
+Veja também: [como escolher fornecedor de BM verificada](/blog/como-escolher-fornecedor-bm-verificada).
+`,
+  },
+  {
+    slug: "bloqueio-conta-nova-facebook-ads-7-motivos",
+    title: "Por que contas novas de Facebook Ads bloqueiam tão rápido: 7 motivos reais",
+    description: "Os 7 motivos técnicos mais comuns pelos quais contas novas de Facebook Ads e Meta bloqueiam nos primeiros dias e como evitar cada um deles.",
+    keywords: ["bloqueio conta nova facebook ads", "conta nova bloqueada", "facebook bloqueia conta nova", "porque conta de anúncio bloqueia", "conta nova meta ads bloqueada", "evitar bloqueio conta nova"],
+    category: "Topo de funil",
+    readingTime: "7 min",
+    publishedAt: "2026-05-16",
+    ogImage: "/og/og-bloqueio-conta-nova.jpg",
+    content: `
+Criou conta de Facebook Ads ontem e ela já bloqueou? Não é azar — é padrão. Conta nova é tratada com desconfiança máxima pelo Meta, e existem 7 motivos técnicos que explicam quase tudo.
+
+## 1. Trust Score inicial é zero
+
+O Meta começa cada conta nova com pontuação de risco alta. Qualquer comportamento "fora do esperado para iniciante" dispara revisão automática.
+
+**Como evitar:** trate as primeiras 2 semanas como warm-up real, não como produção.
+
+## 2. Fingerprint inconsistente
+
+Logar de múltiplos dispositivos, IPs ou países nas primeiras horas é o sinal de alarme mais forte.
+
+**Erros típicos:**
+- Criar BM em casa, configurar no escritório, anunciar do celular
+- Usar VPN de país diferente do anunciante
+- Compartilhar acesso com vários colaboradores cedo demais
+
+**Como evitar:** mantenha **um único fingerprint** (IP residencial + dispositivo + navegador) nas primeiras 4 semanas.
+
+## 3. Pagamento sem histórico
+
+Cartão recém-criado, virtual ou pré-pago em conta nova = bandeira vermelha.
+
+**Como evitar:** use cartão da empresa com **histórico de pelo menos 6 meses** de uso anterior, mesmo que em outras plataformas.
+
+## 4. Aumento brusco de gasto
+
+Subir de R$ 50/dia para R$ 2.000/dia em 48h é o gatilho clássico de bloqueio.
+
+**Curva saudável de warm-up:**
+- Semana 1: R$ 30-50/dia
+- Semana 2: R$ 100-200/dia
+- Semana 3: R$ 300-500/dia
+- Semana 4+: crescimento de até 50% por semana
+
+## 5. Criativo agressivo no início
+
+Conta nova roda criativo conservador. Começar com promessas exageradas, headlines polêmicas ou claims de saúde/finanças = bloqueio quase certo.
+
+**Como evitar:** primeiros 14 dias com criativo institucional ou genérico, mesmo que converta menos. Depois sim, escala criativo agressivo.
+
+## 6. BM não verificada com nicho de risco
+
+Setores como dropshipping, suplementos, finanças, infoproduto e adulto sofrem revisão muito mais rigorosa em BM não verificada.
+
+**Como evitar:** se você está nesses nichos, **comece já com BM verificada** ou pague o preço do bloqueio repetido.
+
+## 7. Página de destino fora de conformidade
+
+Antes de aprovar o anúncio, o Meta varre sua landing. Problemas comuns:
+- Pop-up agressivo
+- Falta de política de privacidade
+- Termos proibidos no copy
+- Redirecionamento suspeito
+- Ausência de informações de contato
+
+**Como evitar:** faça **auditoria de landing** antes de subir campanha — não depois.
+
+## O ciclo vicioso da conta nova
+
+| Dia | O que costuma acontecer |
+|---|---|
+| 1 | Cria conta, sobe gasto |
+| 2 | Aprovação de anúncio com warning |
+| 3 | Pico de entrega, gasto sobe |
+| 4 | Conta entra em revisão |
+| 5 | Bloqueio temporário |
+| 7 | Cria nova conta na mesma BM |
+| 8 | BM cai em conjunto |
+
+Esse ciclo destrói **dezenas de operações novas por mês** no Brasil.
+
+## Como quebrar o ciclo
+
+1. **Paciência no warm-up** (não há atalho)
+2. **BM verificada desde o dia 1** (ou histórico maduro)
+3. **Fingerprint estável** (mesmo IP, dispositivo)
+4. **Pagamento com histórico** (não cartão recém-emitido)
+5. **Plano de contingência** (1 BM reserva já pronta)
+
+## Quando usar contingência ao invés de conta nova
+
+Se você precisa **escalar rápido** e não tem 30 dias para warm-up, comprar ativos com histórico maduro é matemática:
+
+- Custo de 1 BM verificada premium: R$ 5k–R$ 10k
+- Custo de 30 dias de warm-up: 30 dias de leilão perdido + risco de bloqueio
+
+Para a maioria das operações sérias, **ativo pronto vence warm-up**.
+
+## Próximos passos
+
+Para evitar o ciclo do bloqueio recorrente, [conheça a estrutura de contingência para Meta e Facebook Ads](/contingencia-meta-ads) ou [adquira BM Verificada com histórico real](/bm-verificada).
+
+Veja também: [como recuperar conta de anúncio bloqueada](/blog/recuperar-conta-anuncio-bloqueada-facebook-ads).
+`,
+  },
 ];
+
 
 export const getPostBySlug = (slug: string) => blogPosts.find((p) => p.slug === slug);
