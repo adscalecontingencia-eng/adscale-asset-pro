@@ -9,7 +9,7 @@ const navLinks = [
   { href: "/contingencia-meta-ads", label: "Contingência" },
   { href: "/consultoria-meta-ads", label: "Consultoria" },
   { href: "/blog", label: "Blog" },
-  { href: "/#faq", label: "FAQ" },
+  { href: "/sobre", label: "Sobre" },
 ];
 
 const Navbar = () => {

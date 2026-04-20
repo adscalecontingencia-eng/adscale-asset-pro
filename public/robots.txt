@@ -13,4 +13,6 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://adscale.app/sitemap.xml
+Sitemap: https://adscale.app/sitemap-index.xml
+Sitemap: https://adscale.app/sitemap-paginas.xml
+Sitemap: https://adscale.app/sitemap-posts.xml
