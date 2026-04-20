@@ -31,8 +31,9 @@ const HeroSection = () => {
               className="font-display text-5xl lg:text-6xl font-bold leading-[1.1] mb-6 animate-fade-in-up"
               style={{ animationDelay: "0.15s" }}
             >
-              Sua operação merece ativos{" "}
-              <span className="text-gradient">que aguentam o jogo.</span>
+              Quando o leilão aperta, a{" "}
+              <span className="text-gradient">qualidade do ativo</span>{" "}
+              é o que mantém você no ar.
             </h1>
 
             <p
@@ -125,8 +126,9 @@ const HeroSection = () => {
               className="font-display text-2xl font-bold leading-[1.1] mb-3 animate-fade-in-up"
               style={{ animationDelay: "0.25s" }}
             >
-              Sua operação merece ativos{" "}
-              <span className="text-gradient">que aguentam o jogo.</span>
+              Quando o leilão aperta, a{" "}
+              <span className="text-gradient">qualidade do ativo</span>{" "}
+              mantém você no ar.
             </h1>
 
             <p
